@@ -1,0 +1,553 @@
+<div class="wrap">
+
+    <input type="hidden" class="activePage" name="attr_active_page"  value="p1"  />
+
+    <div class="playerPageOne"><!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ playerPageOne (pp1)-->
+        <!-- -~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ playerPageOneHeading (pp1h)-->
+        <!--<div class="pp1hTop">headerTop</div>-->
+        
+        <div class="pp1hCharacterName">
+            <!--<button class="button" type="roll" value="!api attr character_name">
+                <span name="attr_character_name"></span>
+            </button>-->
+        </div>
+        <div class="pp1hCharacterNameLabel">
+            <button class="button" type="roll" value="!api label character_name">CHARACTER NAME</button>
+        </div>
+        
+        <div class="pp1hClassBackground">
+            <div class="pp1hClassLevel flex bottom left bold">
+                <button class="button" type="roll" value="!api attr class_level_race" title="unfefined">
+                    <span name="attr_class_level_race"></span><!--proficiency_bonus_level_max=level this is just level display-->
+                </button>
+            </div>
+            <div class="pp1hBackground flex bottom left bold">
+                <button class="button" type="roll" value="!api attr background_alignment" title="unfefined">
+                    <span name="attr_background_alignment"></span>
+                </button>
+            </div>
+            <div class="pp1hPlayerName flex bottom left bold">
+                <button class="button" type="roll" value="!api attr player_name_experience_points" title="unfefined">
+                    <span name="attr_player_name_experience_points"></span>
+                </button>
+            </div>
+            <div class="pp1hClassLevelLabel">
+                <button class="button" type="roll" value="!api label class_level" title="unfefined"><!--proficiency_bonus_level_max=level this is just level display-->
+                    CLASS & LEVEL
+                </button>
+            </div>
+            <div class="pp1hBackgroundLabel">
+                <button class="button" type="roll" value="!api label background" title="unfefined">
+                    BACKGROUND
+                </button>
+            </div>
+            <div class="pp1hPlayerNameLabel">
+                <button class="button" type="roll" value="!api label player_name" title="unfefined">
+                    PLAYER NAME
+                </button>
+            </div>
+            <div class="pp1hRace flex bottom left bold">
+                <button class="button" type="roll" value="!api attr class_level_race_max" title="unfefined">
+                    <span name="attr_class_level_race_max"></span>
+                </button>
+            </div>
+            <div class="pp1hAlignment flex bottom left bold">
+                <button class="button" type="roll" value="!api attr background_alignment_max" title="unfefined">
+                    <span name="attr_background_alignment_max"></span>
+                </button>
+            </div>
+            <div class="pp1hExperiencePoints flex bottom left bold">
+                <button class="button" type="roll" value="!api attr player_name_experience_points_max" title="unfefined">
+                    <span name="attr_player_name_experience_points_max"></span>
+                </button>
+            </div>
+            <div class="pp1hRaceLabel">
+                <button class="button" type="roll" value="!api label race" title="unfefined">
+                    RACE
+                </button>
+            </div>
+            <div class="pp1hAlignmentLabel">
+                <button class="button" type="roll" value="!api label alignment" title="unfefined">
+                    ALIGNMENT
+                </button>
+            </div>
+            <div class="pp1hExperiencePointsLabel">
+                <button class="button" type="roll" value="!api label experience_points" title="unfefined">
+                    EXPERIENCE POINTS
+                </button>
+            </div>
+        </div>
+        <!--<div class="pp1hBottom">headerBottom</div>-->
+
+        <!-- playerPageOneBody (pp1b)-->
+        <!-- column 1-->
+        <div class="pp1bAbilities">
+            <div class="pp1bStrengthLabel flex middle center small bold">
+                <button class="button" type="roll" value="!api label strength" title="unfefined">
+                    STRENGTH
+                </button>
+            </div>
+            <div class="pp1bStrength flex mdiddle center huge">
+                <button class="button" type="roll" value="!api attr strength" title="unfefined">
+                    <span name="attr_strength"></span>
+                </button>
+            </div>
+            <div class="pp1bStrengthScrore flex mdiddle center large">
+                <button class="button" type="roll" value="!api attr strength_max" title="unfefined">
+                    <span name="attr_strength_max"></span>
+                </button>
+            </div>
+            <div class="pp1bDexterityLabel flex middle center small bold">
+                <button class="button" type="roll" value="!api label dexterity" title="unfefined">
+                    DEXTERITY
+                </button>
+            </div>
+            <div class="pp1bDexterity flex mdiddle center huge">
+                <button class="button" type="roll" value="!api attr dexterity" title="unfefined">
+                    <span name="attr_dexterity"></span>
+                </button>
+            </div>
+            <div class="pp1bDexterityScrore flex mdiddle center large">
+                <button class="button" type="roll" value="!api attr dexterity_max" title="unfefined">
+                    <span name="attr_dexterity_max"></span>
+                </button>
+            </div>
+            <div class="pp1bConstitutionLabel flex middle center small bold condensed">
+                <button class="button" type="roll" value="!api label constitution" title="unfefined">
+                    CONSTITUTION
+                </button>
+            </div>
+            <div class="pp1bConstitution flex mdiddle center huge">
+                <button class="button" type="roll" value="!api attr constitution" title="unfefined">
+                    <span name="attr_constitution"></span>
+                </button>
+            </div>
+            <div class="pp1bConstitutionScrore flex mdiddle center large">
+                <button class="button" type="roll" value="!api attr constitution_max" title="unfefined">
+                    <span name="attr_constitution_max"></span>
+                </button>
+            </div>
+            <div class="pp1bIntelligenceLabel flex middle center small bold condensed">
+                <button class="button" type="roll" value="!api label intelligence" title="unfefined">
+                    INTELLIGENCE
+                </button>
+            </div>
+            <div class="pp1bIntelligence flex mdiddle center huge">
+                <button class="button" type="roll" value="!api attr intelligence" title="unfefined">
+                    <span name="attr_intelligence"></span>
+                </button>
+            </div>
+            <div class="pp1bIntelligenceScrore flex mdiddle center large">
+                <button class="button" type="roll" value="!api attr intelligence_max" title="unfefined">
+                    <span name="attr_intelligence_max"></span>
+                </button>
+            </div>
+            <div class="pp1bWisdomLabel flex middle center small bold">
+                <button class="button" type="roll" value="!api label wisdom" title="unfefined">
+                    WISDOM
+                </button>
+            </div>
+            <div class="pp1bWisdom flex mdiddle center huge">
+                <button class="button" type="roll" value="!api attr wisdom" title="unfefined">
+                    <span name="attr_wisdom"></span>
+                </button>
+            </div>
+            <div class="pp1bWisdomScrore flex mdiddle center large">
+                <button class="button" type="roll" value="!api attr wisdom_max" title="unfefined">
+                    <span name="attr_wisdom_max"></span>
+                </button>
+            </div>
+            <div class="pp1bCharismaLabel flex middle center small bold">
+                <button class="button" type="roll" value="!api label charisma" title="unfefined">
+                    CHARISMA
+                </button>
+            </div>
+            <div class="pp1bCharisma flex mdiddle center huge">
+                <button class="button" type="roll" value="!api attr charisma" title="unfefined">
+                    <span name="attr_charisma"></span>
+                </button>
+            </div>
+            <div class="pp1bCharismaScrore flex mdiddle center large">
+                <button class="button" type="roll" value="!api attr charisma_max" title="unfefined">
+                    <span name="attr_charisma_max"></span>
+                </button>
+            </div>
+        </div>
+        <div class="pp1bInspiration">
+            <input type="hidden" class="sheet-inspiration" name="attr_inspiration" value="TRUE">
+            <div class="inspiration_off" title="unfefined"></div>
+            <div class="inspiration_on" title="unfefined"></div>
+        </div>
+        <div class="pp1bInspirationLabel flex middle center bold">
+                <button class="button" type="roll" value="!api label inspiration" title="unfefined">
+                    INSPIRATION
+                </button>
+            </div>
+        <div class="pp1bProficiencyBonus flex mdiddle center xlarge">
+            <button class="button" type="roll" value="!api attr proficiency_bonus_level" title="unfefined"><!--proficiency_bonus_level_max=level this is just level display-->
+                <span name="attr_proficiency_bonus_level"></span>
+            </button>
+        </div>
+        <div class="pp1bProficiencyBonusLabel flex middle center condensed bold">
+            <button class="button" type="roll" value="!api label proficiency_bonus" title="unfefined">
+                PROFICIENCY BONUS
+            </button>
+        </div>
+        <div class="pp1bSaves">
+            
+            <div class="pp1bSaveStrengthProficiency">
+                <input type="hidden" class="saveProficiencyInput" name="attr_save_strength_max" value="FALSE">
+                <div class="saveProficiencyOffTip"></div>
+                <div class="saveProficiencyOnTip"></div>
+            </div>
+            <div class="pp1bSaveStrength flex bottom center">
+                <button class="button" type="roll" value="!api attr save_strength" title="unfefined">
+                    <span name="attr_save_strength"></span>
+                </button>
+            </div>
+            <div class="pp1bSaveStrengthLabel flex bottom left">
+                <button class="button" type="roll" value="!api label save_strength" title="unfefined">
+                    Strength
+                </button>
+            </div>
+            
+            <div class="pp1bSaveDexterityProficiency">
+                <input type="hidden" class="saveProficiencyInput" name="attr_save_dexterity_max" value="FALSE">
+                <div class="saveProficiencyOff"></div>
+                <div class="saveProficiencyOn"></div>
+            </div>
+            <div class="pp1bSaveDexterity flex bottom center">
+                <button class="button" type="roll" value="!api attr save_dexterity" title="unfefined">
+                    <span name="attr_save_dexterity"></span>
+                </button>
+            </div>
+            <div class="pp1bSaveDexterityLabel flex bottom left">
+                <button class="button" type="roll" value="!api label save_dexterity" title="unfefined">
+                    Dexterity
+                </button>
+            </div>
+            
+            <div class="pp1bSaveConstitutionProficiency">
+                <input type="hidden" class="saveProficiencyInput" name="attr_save_constitution_max" value="FALSE">
+                <div class="saveProficiencyOff"></div>
+                <div class="saveProficiencyOn"></div>
+            </div>
+            <div class="pp1bSaveConstitution flex bottom center">
+                <button class="button" type="roll" value="!api attr save_constitution" title="unfefined">
+                    <span name="attr_save_dexterity"></span>
+                </button>
+            </div>
+            <div class="pp1bSaveConstitutionLabel flex bottom left">
+                <button class="button" type="roll" value="!api label save_constitution" title="unfefined">
+                    Constitution
+                </button>
+            </div>
+            
+            <div class="pp1bSaveIntelligenceProficiency">
+                <input type="hidden" class="saveProficiencyInput" name="attr_save_intelligence_max" value="FALSE">
+                <div class="saveProficiencyOff"></div>
+                <div class="saveProficiencyOn"></div>
+            </div>
+            <div class="pp1bSaveIntelligence flex bottom center">
+                <button class="button" type="roll" value="!api attr save_intelligence" title="unfefined">
+                    <span name="attr_save_dexterity"></span>
+                </button>
+            </div>
+            <div class="pp1bSaveIntelligenceLabel flex bottom left">
+                <button class="button" type="roll" value="!api label save_intelligence" title="unfefined">
+                    Intelligence
+                </button>
+            </div>
+            
+            <div class="pp1bSaveWisdomProficiency">
+                <input type="hidden" class="saveProficiencyInput" name="attr_save_wisdom_max" value="FALSE">
+                <div class="saveProficiencyOff"></div>
+                <div class="saveProficiencyOn"></div>
+            </div>
+            <div class="pp1bSaveWisdom flex bottom center">
+                <button class="button" type="roll" value="!api attr save_wisdom" title="unfefined">
+                    <span name="attr_save_dexterity"></span>
+                </button>
+            </div>
+            <div class="pp1bSaveWisdomLabel flex bottom left">
+                <button class="button" type="roll" value="!api label save_wisdom" title="unfefined">
+                    Wisdom
+                </button>
+            </div>
+
+            <div class="pp1bSaveCharismaProficiency">
+                <input type="hidden" class="saveProficiencyInput" name="attr_save_charisma_max" value="FALSE">
+                <div class="saveProficiencyOff"></div>
+                <div class="saveProficiencyOn"></div>
+            </div>
+            <div class="pp1bSaveCharisma flex bottom center">
+                <button class="button" type="roll" value="!api attr save_charisma" title="unfefined">
+                    <span name="attr_save_dexterity"></span>
+                </button>
+            </div>
+            <div class="pp1bSaveCharismaLabel flex bottom left">
+                <button class="button" type="roll" value="!api label save_charisma" title="unfefined">
+                    Charisma
+                </button>
+            </div>
+            
+            <div class="pp1bSaveLabel flex small middle center bold">
+                <button class="button" type="roll" value="!api label saving_throws" title="unfefined">
+                    SAVING THROWS
+                </button>
+            </div>
+        </div>
+        <div class="pp1bSkills">
+            <div class="pp1bAcrobatics">Acrobatics</div>
+            <div class="pp1bAnimalhHandling">AnimalhHandling</div>
+            <div class="pp1bArcana">Arcana</div>
+            <div class="pp1bAthletics">Athletics</div>
+            <div class="pp1bDeception">Deception</div>
+            <div class="pp1bHistory">History</div>
+            <div class="pp1bInsight">Insight</div>
+            <div class="pp1bIntimidation">Intimidation</div>
+            <div class="pp1bInvestigation">Investigation</div>
+            <div class="pp1bMedicine">Medicine</div>
+            <div class="pp1bNature">Nature</div>
+            <div class="pp1bPerception">Perception</div>
+            <div class="pp1bPerformance">Performance</div>
+            <div class="pp1bPersuasion">Persuasion</div>
+            <div class="pp1bReligion">Religion</div>
+            <div class="pp1bSleightOfHand">SleightOfHand</div>
+            <div class="pp1bStealth">Stealth</div>
+            <div class="pp1bSurvival">Survival</div>
+            <div class="pp1bSkillsLabel flex small middle center bold">
+                <button class="button" type="roll" value="!api label skills" title="unfefined">
+                    SKILLS
+                </button>
+            </div>
+        </div>
+        <div class="pp1bPassiveWisdom flex mdiddle center xlarge">
+                <button class="button" type="roll" value="!api attr passive_wisdom" title="unfefined">
+                    <span name="attr_passive_wisdom"></span>
+                </button>
+            </div>
+        <div class="pp1bPassiveWisdomLabel flex middle center bold">
+                <button class="button" type="roll" value="!api label passive_wisdom" title="unfefined">
+                    PASSIVE WISDOM (PERCEPTION)
+                </button>
+            </div>
+        <div class="pp1bAdditionalProficiencyArea">
+            <div class="pp1bAdditionalProficiency">AdditionalProficiency</div>
+            <div class="pp1bAdditionalProficiencyLabel flex middle center small bold">
+                <button class="button" type="roll" value="!api label passive_wisdom" title="unfefined">
+                    OTHER PROFICIENCIES & LANGUAGES
+                </button>
+            </div>
+        </div>
+
+        <!-- playerPageOneBody (pp1b)-->
+        <!-- column 2-->
+        <div class="pp1bArmorClassArea">
+            <div class="pp1bArmorClass">AC</div>
+            <div class="pp1bArmorClassLabel">Armor Class</div>
+        </div>
+        
+        <div class="pp1bInitiativeArea">
+            <div class="pp1bInitiative">4</div>
+            <div class="pp1bInitiativeLabel">Initiative</div>
+        </div>
+        
+        <div class="pp1bSpeedArea">
+            <div class="pp1bSpeed">30</div>
+            <div class="pp1bSpeedLabel">Speed</div>
+        </div>
+        
+        <div class="pp1bCurrentHitPointsArea">
+            <div class="pp1bHitPointmaximumLabel">HitPointmaximum</div>
+            <div class="pp1bHitPointmaximum">56</div>
+            <div class="pp1bCurrentHitPoint">46</div>
+            <div class="pp1bCurrentHitPointLabel">CurrentHitPoint</div>
+        </div>
+        
+        <div class="pp1bTemporaryHitPointsArea">
+            <div class="pp1bTemporaryHitPoints">TemporaryHitPoints</div>
+            <div class="pp1bTemporaryHitPointsLabel">TemporaryHitPointsLabel</div>
+        </div>
+        <div class="pp1bHitDiceArea">
+            <div class="pp1bHitDiceTotal">Total</div>
+            <div class="pp1bHitDiceTotalCurrent">Current</div>
+            <div class="pp1bHitDiceLabel">Label</div>
+        </div>
+        <div class="pp1bDeathSavesArea">
+            <div class="pp1bDeathSaveSuccess">Success</div>
+            <div class="pp1bDeathSaveFails">Fails</div>
+            <div class="pp1bDeathSaveLabel">DeathSaveLabel</div>
+        </div>
+        <div class="pp1bAttacksCastingArea">
+            <div class="pp1bAttacksCasting">pp1bAttacksCasting</div>
+            <div class="pp1bAttacksCastingLabel">AttacksCastingLabel</div>
+        </div>
+        <div class="pp1bCurrency">
+            <div class="pp1bCurrencyCP">CPvalue</div>
+            <div class="pp1bCurrencyCPLabel">CP</div>
+            <div class="pp1bCurrencySP">SPvalue</div>
+            <div class="pp1bCurrencySPLabel">SP</div>
+            <div class="pp1bCurrencyEP">EPvalue</div>
+            <div class="pp1bCurrencyEPLabel">EP</div>
+            <div class="pp1bCurrencyGP">GPvalue</div>
+            <div class="pp1bCurrencyGPLabel">GP</div>
+            <div class="pp1bCurrencyPP">PPvalue</div>
+            <div class="pp1bCurrencyPPLabel">PP</div>
+        </div>
+        <div class="pp1bEquipmentUpper">EquipmentUpper</div>
+        <div class="pp1bEquipmentLowerArea">
+            <div class="pp1bEquipmentLower">EquipmentLower</div>
+            <div class="pp1bEquipmentLowerLabel">EquipmentLabel</div>
+        </div>
+
+        <!-- playerPageOneBody (pp1b)-->
+        <!-- column 3-->
+        <div class="pp1bTraitsArea">
+            <div class="pp1bTraits">Traits</div>
+            <div class="pp1bTraitsLabel">Traits</div>
+        </div>
+        <div class="pp1bIdealsArea">
+            <div class="pp1bIdeals">Ideals</div>
+            <div class="pp1bIdealsLabel">IdealsLabel</div>
+        </div>
+        <div class="pp1bBondsArea">
+            <div class="pp1bBonds">Bonds</div>
+            <div class="pp1bBondsLabel">BondsLabel</div>
+        </div>
+        <div class="pp1bFlawsArea">
+            <div class="pp1bFlaws">Flaws</div>
+            <div class="pp1bFlawsLabel">FlawsLabel</div>
+        </div>
+        <div class="pp1bFeaturesArea">
+            <div class="pp1bFeatures">Features</div>
+            <div class="pp1bFeaturesLabel">FeaturesLabel</div>
+        </div>
+
+    </div>
+    
+    <div class="playerPageTwo"><!-- (pp2)-->
+        <!-- playerPageTwoHeading (pp2h)-->
+        <div class="pp2hTop">headerTop</div>
+        <div class="pp2hCharacterName">headerCharacterName</div>
+        <div class="pp2hCharacterNameLabel">headerCharacterNameLabel</div>
+        <div class="pp2hDescription">
+            <div class="pp2hAge">Age</div>
+            <div class="pp2hAgeLabel">AgeLabel</div>
+            <div class="pp2hHeight">Height</div>
+            <div class="pp2hHeightLabel">HeightLabel</div>
+            <div class="pp2hWeight">Weight</div>
+            <div class="pp2hWeightLabel">WeightLabel</div>
+            <div class="pp2hEyes">Eyes</div>
+            <div class="pp2hEyesLabel">EyesLabel</div>
+            <div class="pp2hSkin">Skin</div>
+            <div class="pp2hSkinLabel">SkinLabel</div>
+            <div class="pp2hHair">Hair</div>
+            <div class="pp2hHairLabel">HairLabel</div>
+        </div>
+        <div class="pp2hBottom">headerBottom</div>
+        
+        <!-- playerPageTwoBody (pp2b)-->
+        <!-- column 1-->
+        <div class="pp2bAppearanceArea">
+            <div class="pp2bAppearance">Appearance</div>
+            <div class="pp2bAppearanceLabel">AppearanceLabel</div>
+        </div>
+        <div class="pp2bBackstoryArea">
+            <div class="pp2bBackstory">Backstory</div>
+            <div class="pp2bBackstoryLabel">BackstoryLabel</div>
+        </div>
+        
+        <!-- playerPageTwoBody (pp2b)-->
+        <!-- column 2-->
+        <div class="pp2bAlliesOrganizationLeft">AlliesOrganizationLeft</div>
+        <div class="pp2bOrganizationName">Name</div>
+        <div class="pp2bOrganizationSymbol">Symbol</div>
+        <div class="pp2bAlliesOrganizationRight">AlliesOrganizationRight</div>
+        <div class="pp2bOrganizationLabel">OrganizationLabel</div>
+        <div class="pp2bAdditionalFeaturesLeft">FeaturesLeft</div>
+        <div class="pp2bAdditionalFeaturesRight">FeaturesRight</div>
+        <div class="pp2bAdditionalFeaturesLabel">FeaturesLabelt</div>
+        <div class="pp2bTreasureLeft">TreasureLeft</div>
+        <div class="pp2bTreasureRight">TreasureRight</div>
+        <div class="pp2bTreasureLabel">TreasureLabel</div>
+    </div>
+    
+    <div class="playerPageThree"><!-- (pp3)-->
+        <!-- playerPageThreeHeading (pp3h)-->
+        <div class="pp3hTop">headerTop</div>
+        <div class="pp3hCastingClass">CastingClassName</div>
+        <div class="pp3hCastingClassLabel">CastingClassLabel</div>
+        <div class="pp3hSpellCastingAbility">SpAbility</div>
+        <div class="pp3hSpellCastingAbilityLabel">SpAbilityLabel</div>
+        <div class="pp3hSpellSaveDC">SpSaveDC</div>
+        <div class="pp3hSpellSaveDCLabel">SpSaveDCLabel</div>
+        <div class="pp3hSpellAttackBonus">SpAttBon</div>
+        <div class="pp3hSpellAttackBonusLabel">SpAttBonLabel</div>
+        <div class="pp3hBottom">headerBottom</div>
+        
+        <!-- playerPageThreeBody (pp3b)-->
+        <!-- sp 0-->
+        <div class="pp3hSp0">Sp0</div>
+        <div class="pp3hCantrip">cantrip</div>
+        <div class="pp3hSp0List">Sp0List</div>
+        <!-- sp 1-->
+        <div class="pp3hSp1">Sp1</div>
+        <div class="pp3hSp1Slots">Slots</div>
+        <div class="pp3hSp1SlotsUsed">Used</div>
+        <div class="pp3hSp1List">Sp1List</div>
+        <!-- sp 2-->
+        <div class="pp3hSp2">Sp2</div>
+        <div class="pp3hSp2Slots">Slots</div>
+        <div class="pp3hSp2SlotsUsed">Used</div>
+        <div class="pp3hSp2List">Sp2List</div>
+        <!-- sp 3-->
+        <div class="pp3hSp3">Sp3</div>
+        <div class="pp3hSp3Slots">Slots</div>
+        <div class="pp3hSp3SlotsUsed">Used</div>
+        <div class="pp3hSp3List">Sp3List</div>
+        <!-- sp 4-->
+        <div class="pp3hSp4">Sp4</div>
+        <div class="pp3hSp4Slots">Slots</div>
+        <div class="pp3hSp4SlotsUsed">Used</div>
+        <div class="pp3hSp4List">Sp4List</div>
+        <!-- sp 5-->
+        <div class="pp3hSp5">Sp5</div>
+        <div class="pp3hSp5Slots">Slots</div>
+        <div class="pp3hSp5SlotsUsed">Used</div>
+        <div class="pp3hSp5List">Sp5List</div>
+        <!-- sp 6-->
+        <div class="pp3hSp6">Sp6</div>
+        <div class="pp3hSp6Slots">Slots</div>
+        <div class="pp3hSp6SlotsUsed">Used</div>
+        <div class="pp3hSp6List">Sp6List</div>
+        <!-- sp 7-->
+        <div class="pp3hSp7">Sp7</div>
+        <div class="pp3hSp7Slots">Slots</div>
+        <div class="pp3hSp7SlotsUsed">Used</div>
+        <div class="pp3hSp7List">Sp7List</div>
+        <!-- sp 8-->
+        <div class="pp3hSp8">Sp8</div>
+        <div class="pp3hSp8Slots">Slots</div>
+        <div class="pp3hSp8SlotsUsed">Used</div>
+        <div class="pp3hSp8List">Sp8List</div>
+        <!-- sp 9-->
+        <div class="pp3hSp9">Sp9</div>
+        <div class="pp3hSp9Slots">Slots</div>
+        <div class="pp3hSp9SlotsUsed">Used</div>
+        <div class="pp3hSp9List">Sp9List</div>
+    </div>
+    
+    <!-- > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE -->
+    <div class="temp"><input type="radio" name="attr_page" value="p1" checked><input type="radio" name="attr_page" value="p2"><input type="radio" name="attr_page" value="p3"></div>
+</div>
+
+
+
+<script type="text/worker">
+    /*  > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE  */
+    on("change:page", function() { getAttrs(["page"], function(v) { setAttrs({ "active_page": v.page }); }); });
+</script>
+
+
+
