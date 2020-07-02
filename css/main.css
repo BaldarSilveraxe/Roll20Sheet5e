@@ -374,9 +374,6 @@ button[type=roll].sheet-button:active {
         .sheet-saveProficiencyInput[value="TRUE"] ~ .sheet-saveProficiencyOff { display: none; }
         .sheet-saveProficiencyInput:not([value="TRUE"]) ~ .sheet-saveProficiencyOn { display: none; }
         .sheet-saveProficiencyInput:not([value="TRUE"]) ~ .sheet-saveProficiencyOff { display: block; }
-    
-    
-    
 
 .sheet-pp1bSkills { 
     grid-area: 23 / 7 / 29 / 10;
@@ -866,8 +863,3 @@ position:absolute;
 
 
 /* > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE */
-
-
-
-
-
