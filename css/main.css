@@ -1,0 +1,873 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+
+.sheet-wrap {
+	min-width: 870px;
+	margin: 0px -10px 0px -10px;
+	font-family: 'Overpass', Arial;
+	font-size: 12px;
+}
+
+button[type=roll].sheet-button {
+    all: unset;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: none;
+    background: transparent;
+    box-shadow: none;
+    background-image: none;
+}
+    
+button[type=roll].sheet-button:before {
+	content: ''!important;
+	font-family: inherit!important;
+}
+
+button[type=roll].sheet-button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    border-style: none;
+}
+
+button[type=roll].sheet-button:hover {
+	color: #3f88e6!important;
+	background-position: initial;
+}
+
+button[type=roll].sheet-button:active {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+
+.sheet-flex { display: flex; }
+.sheet-top { align-items: flex-start; }
+.sheet-middle { align-items: center; }
+.sheet-bottom { align-items: flex-end; }
+.sheet-left { justify-content: flex-start; }
+.sheet-right { justify-content: flex-end; }
+.sheet-center { justify-content: center; }
+.sheet-small { font-size: 10px; }
+.sheet-large { font-size: 14px; }
+.sheet-xlarge { font-size: 16px; }
+.sheet-huge { font-size: 32px; }
+.sheet-bold { font-weight: bold; }
+.sheet-condensed { letter-spacing: -1px; }
+
+/*------------------------------------------------------------------------------ playerPageOne (pp1h) */
+.sheet-playerPageOne {
+    width: 870px;
+    min-width: 870px;
+	height: 1133px;
+    background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/mainPage.svg");
+	background-position: center center;
+	background-size: contain;
+	background-color: white;
+    display: grid;
+    grid-template-columns: 34px 16px 18px 18px 24px 19px 34px 4px 121px 14px 9px 2px 11px 45px 5px 9px 21px 26px 20px 20px 21px 66px 11px 2px 21px 13px 180px 53px 13px 4px 16px;
+    grid-template-rows: 42px 18px 48px 17px 41px 13px 9px 12px 20px 28px 11px 5px 6px 5px 7px 70px 8px 4px 58px 9px 4px 4px 6px 69px 2px 26px 264px 27px 17px 29px 22px 147px 63px 22px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/*------------------------------------------------------------------------------ playerPageOne heading (pp1h) */
+.sheet-pp1hTop { 
+    grid-area: 1 / 1 / 2 / 32;
+}
+
+.sheet-pp1hCharacterName {
+	grid-area: 3 / 3 / 4 / 15;
+	padding: 3px 3px 5px 3px;
+}
+
+.sheet-pp1hCharacterNameLabel {
+	grid-area: 4 / 5 / 4 / 15;
+	padding: 2px 0px 0px 1px;
+}
+
+.sheet-pp1hClassBackground { 
+    grid-area: 2 / 16 / 5 / 29;
+    display: grid;
+    grid-template-columns: 5px 151px 151px 151px 5px;
+    grid-template-rows: 1px 24px 15px 25px 15px 1px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.sheet-pp1hClassLevel {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.sheet-pp1hBackground {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.sheet-pp1hPlayerName {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.sheet-pp1hClassLevelLabel {
+    grid-area: 3 / 2 / 4 / 3;
+    border-top: 1px solid lightgrey;
+}
+
+.sheet-pp1hBackgroundLabel {
+    grid-area: 3 / 3 / 4 / 4;
+    border-top: 1px solid lightgrey;
+}
+
+.sheet-pp1hPlayerNameLabel {
+    grid-area: 3 / 4 / 4 / 5;
+    border-top: 1px solid lightgrey;
+}
+
+.sheet-pp1hRace {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.sheet-pp1hAlignment  {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.sheet-pp1hExperiencePoints {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.sheet-pp1hRaceLabel {
+    grid-area: 5 / 2 / 6 / 3;
+    border-top: 1px solid lightgrey;
+}
+
+.sheet-pp1hAlignmentLabel {
+    grid-area: 5 / 3 / 6 / 4;
+    border-top: 1px solid lightgrey;
+}
+
+.sheet-pp1hExperiencePointsLabel {
+    grid-area: 5 / 4 / 6 / 5;
+    border-top: 1px solid lightgrey;
+}
+
+.sheet-pp1hBottom {
+    grid-area: 5 / 1 / 6 / 32;
+}
+
+/*------------------------------------------------------------------------------ playerPageOne body (pp1b) */
+/* column 1 */
+.sheet-pp1bAbilities {
+    grid-area: 8 / 2 / 28 / 6;
+    display: grid;
+    grid-template-columns: 76px;
+    grid-template-rows: 15px 47px 26px 18px 15px 47px 26px 18px 15px 47px 26px 18px 15px 47px 26px 18px 15px 47px 26px 18px 15px 47px 26px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+    .sheet-pp1bStrengthLabel { 
+        grid-area: 1 / 1 / 2 / 2;
+        padding: 2px 0px 0px 0px;
+    }
+    .sheet-pp1bStrength { 
+        grid-area: 2 / 1 / 3 / 2;
+        padding: 2px 0px 0px 0px;
+    }
+    .sheet-pp1bStrengthScrore { 
+        grid-area: 3 / 1 / 4 / 2;
+        padding: 2px 0px 0px 0px;
+    }
+    .sheet-pp1bDexterityLabel { 
+        grid-area: 5 / 1 / 6 / 2;
+        padding: 2px 0px 0px 0px;
+    }
+    .sheet-pp1bDexterity { 
+        grid-area: 6 / 1 / 7 / 2;
+        padding: 2px 0px 0px 0px;
+    }
+    .sheet-pp1bDexterityScrore { 
+        grid-area: 7 / 1 / 8 / 2;
+        padding: 2px 0px 0px 0px;
+    }
+    .sheet-pp1bConstitutionLabel { 
+        grid-area: 9 / 1 / 10 / 2;
+        padding: 2px 0px 0px 0px;
+    }
+    .sheet-pp1bConstitution { grid-area: 10 / 1 / 11 / 2;}
+    .sheet-pp1bConstitutionScrore { grid-area: 11 / 1 / 12 / 2;}
+    .sheet-pp1bIntelligenceLabel { 
+        grid-area: 13 / 1 / 14 / 2;
+        padding: 2px 0px 0px 0px;
+    }
+    .sheet-pp1bIntelligence { grid-area: 14 / 1 / 15 / 2;}
+    .sheet-pp1bIntelligenceScrore { grid-area: 15 / 1 / 16 / 2;}
+    .sheet-pp1bWisdomLabel { 
+        grid-area: 17 / 1 / 18 / 2;
+        padding: 2px 0px 0px 0px;
+    }
+    .sheet-pp1bWisdom { grid-area: 18 / 1 / 19 / 2;}
+    .sheet-pp1bWisdomScrore { grid-area: 19 / 1 / 20 / 2;}
+    .sheet-pp1bCharismaLabel { 
+        grid-area: 21 / 1 / 22 / 2;
+        padding: 2px 0px 0px 0px;
+    }
+    .sheet-pp1bCharisma { grid-area: 22 / 1 / 23 / 2;}
+    .sheet-pp1bCharismaScrore { grid-area: 23 / 1 / 24 / 2;}
+    
+.sheet-pp1bInspiration { 
+    grid-area: 6 / 7 / 9 / 8; 
+    padding: 3px 0px 0px 3px;
+}
+
+.sheet-inspiration_off {
+    width: 30px;
+    height: 30px;
+    background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/inspiration/inspiration-off.svg");
+	background-position: center center;
+	background-size: contain;
+	background-color: white;
+}
+.sheet-inspiration_on {
+    width: 30px;
+    height: 30px;
+    background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/inspiration/inspiration_on.svg");
+	background-position: center center;
+	background-size: contain;
+	background-color: white;
+}
+.sheet-inspiration[value="TRUE"] ~ .sheet-inspiration_on { display: block; }
+.sheet-inspiration[value="TRUE"] ~ .sheet-inspiration_off { display: none; }
+.sheet-inspiration:not([value="TRUE"]) ~ .sheet-inspiration_on { display: none; }
+.sheet-inspiration:not([value="TRUE"]) ~ .sheet-inspiration_off { display: block; }
+.sheet-pp1bInspirationLabel {
+    grid-area: 6 / 8 / 9 / 10;
+    padding: 3px 0px 0px 0px;
+}
+
+.sheet-pp1bProficiencyBonus { 
+    grid-area: 10 / 7 / 12 / 9;
+    padding: 2px 0px 0px 0px;
+}
+.sheet-pp1bProficiencyBonusLabel {
+    grid-area: 10 / 9 / 12 / 10;
+    padding: 3px 0px 0px 0px;
+}
+
+.sheet-pp1bSaves { grid-area: 15 / 7 / 20 / 10;
+    display: grid;
+    grid-template-columns: 5px 20px 30px 100px 5px;
+    grid-template-rows: 5px repeat(7, 20px) 2px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    .sheet-pp1bSaveStrengthProficiency { 
+        grid-area: 2 / 2 / 3 / 3;
+    } 
+    .sheet-pp1bSaveStrength { 
+        grid-area: 2 / 3 / 3 / 4;
+        border-bottom: 1px solid lightgrey;
+    }
+    .sheet-pp1bSaveStrengthLabel { 
+        grid-area: 2 / 4 / 3 / 5;
+    }
+    
+    .sheet-pp1bSaveDexterityProficiency { 
+        grid-area: 3 / 2 / 4 / 3;
+    } 
+    .sheet-pp1bSaveDexterity { 
+        grid-area: 3 / 3 / 4 / 4;
+        border-bottom: 1px solid lightgrey;
+    }
+    .sheet-pp1bSaveDexterityLabel { 
+        grid-area: 3 / 4 / 4 / 5;
+    }
+    
+    .sheet-pp1bSaveConstitutionProficiency { 
+        grid-area: 4 / 2 / 5 / 3;
+    } 
+    .sheet-pp1bSaveConstitution { 
+        grid-area: 4 / 3 / 5 / 4;
+        border-bottom: 1px solid lightgrey;
+    }
+    .sheet-pp1bSaveConstitutionLabel { 
+        grid-area: 4 / 4 / 5 / 5;
+    }
+    
+    .sheet-pp1bSaveIntelligenceProficiency { 
+        grid-area: 5 / 2 / 6 / 3;
+    } 
+    .sheet-pp1bSaveIntelligence { 
+        grid-area: 5 / 3 / 6 / 4;
+        border-bottom: 1px solid lightgrey;
+    }
+    .sheet-pp1bSaveIntelligenceLabel { 
+        grid-area: 5 / 4 / 6 / 5;
+    }
+
+    .sheet-pp1bSaveWisdomProficiency { 
+        grid-area: 6 / 2 / 7 / 3;
+    } 
+    .sheet-pp1bSaveWisdom { 
+        grid-area: 6 / 3 / 7 / 4;
+        border-bottom: 1px solid lightgrey;
+    }
+    .sheet-pp1bSaveWisdomLabel { 
+        grid-area: 6 / 4 / 7 / 5;
+    }  
+
+    .sheet-pp1bSaveCharismaProficiency { 
+        grid-area: 7 / 2 / 8 / 3;
+    } 
+    .sheet-pp1bSaveCharisma { 
+        grid-area: 7 / 3 / 8 / 4;
+        border-bottom: 1px solid lightgrey;
+    }
+    .sheet-pp1bSaveCharismaLabel { 
+        grid-area: 7 / 4 / 8 / 5;
+    }  
+    
+    
+    .sheet-pp1bSaveLabel { grid-area: 8 / 2 / 9 / 5;}
+    
+        .sheet-saveProficiencyOffTip {
+            width: 20px;
+            height: 20px;
+            background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/proficiency/proficiency_tip_off.svg");/*needs minified*/
+        	background-position: center center;
+        	background-size: contain;
+        	background-color: white;
+        }
+        .sheet-saveProficiencyOnTip {
+            width: 20px;
+            height: 20px;
+            background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/proficiency/proficiency_tip_on.svg");/*needs minified*/
+        	background-position: center center;
+        	background-size: contain;
+        	background-color: white;
+        }
+        .sheet-saveProficiencyOff {
+            width: 20px;
+            height: 20px;
+            background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/proficiency/proficiency_off.svg");/*needs minified*/
+        	background-position: center center;
+        	background-size: contain;
+        	background-color: white;
+        }
+        .sheet-saveProficiencyOn {
+            width: 20px;
+            height: 20px;
+            background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/proficiency/proficiency_on.svg");/*needs minified*/
+        	background-position: center center;
+        	background-size: contain;
+        	background-color: white;
+        }
+        .sheet-saveProficiencyInput[value="TRUE"] ~ .sheet-saveProficiencyOnTip { display: block; }
+        .sheet-saveProficiencyInput[value="TRUE"] ~ .sheet-saveProficiencyOffTip { display: none; }
+        .sheet-saveProficiencyInput:not([value="TRUE"]) ~ .sheet-saveProficiencyOnTip { display: none; }
+        .sheet-saveProficiencyInput:not([value="TRUE"]) ~ .sheet-saveProficiencyOffTip { display: block; }
+        .sheet-saveProficiencyInput[value="TRUE"] ~ .sheet-saveProficiencyOn { display: block; }
+        .sheet-saveProficiencyInput[value="TRUE"] ~ .sheet-saveProficiencyOff { display: none; }
+        .sheet-saveProficiencyInput:not([value="TRUE"]) ~ .sheet-saveProficiencyOn { display: none; }
+        .sheet-saveProficiencyInput:not([value="TRUE"]) ~ .sheet-saveProficiencyOff { display: block; }
+    
+    
+    
+
+.sheet-pp1bSkills { 
+    grid-area: 23 / 7 / 29 / 10;
+    display: grid;
+    grid-template-columns: 5px 149px 5px;
+    grid-template-rows: 9px repeat(18, 20px) 21px 1px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    .sheet-pp1bAcrobatics { grid-area: 2 / 2 / 3 / 3; }
+    .sheet-pp1bAnimalhHandling { grid-area: 3 / 2 / 4 / 3; }
+    .sheet-pp1bArcana { grid-area: 4 / 2 / 5 / 3; }
+    .sheet-pp1bAthletics { grid-area: 5 / 2 / 6 / 3; }
+    .sheet-pp1bDeception { grid-area: 6 / 2 / 7 / 3; }
+    .sheet-pp1bHistory { grid-area: 7 / 2 / 8 / 3; }
+    .sheet-pp1bInsight { grid-area: 8 / 2 / 9 / 3; }
+    .sheet-pp1bIntimidation { grid-area: 9 / 2 / 10 / 3; }
+    .sheet-pp1bInvestigation { grid-area: 10 / 2 / 11 / 3; }
+    .sheet-pp1bMedicine { grid-area: 11 / 2 / 12 / 3; }
+    .sheet-pp1bNature { grid-area: 12 / 2 / 13 / 3; }
+    .sheet-pp1bPerception { grid-area: 13 / 2 / 14 / 3; }
+    .sheet-pp1bPerformance { grid-area: 14 / 2 / 15 / 3; }
+    .sheet-pp1bPersuasion { grid-area: 15 / 2 / 16 / 3; }
+    .sheet-pp1bReligion { grid-area: 16 / 2 / 17 / 3; }
+    .sheet-pp1bSleightOfHand { grid-area: 17 / 2 / 18 / 3; }
+    .sheet-pp1bStealth { grid-area: 18 / 2 / 19 / 3; }
+    .sheet-pp1bSurvival { grid-area: 19 / 2 / 20 / 3; }
+    .sheet-pp1bSkillsLabel { grid-area: 20 / 2 / 21 / 3; }/**/
+
+.sheet-pp1bPassiveWisdom {
+    grid-area: 30 / 2 / 31 / 4;
+    padding: 2px 0px 0px 0px;
+}
+.sheet-pp1bPassiveWisdomLabel {
+    grid-area: 30 / 4 / 31 / 10;
+    padding: 2px 0px 0px 0px;
+}
+
+.sheet-pp1bAdditionalProficiencyArea { grid-area: 32 / 2 / 34 / 10; }
+    .sheet-pp1bAdditionalProficiency {width: 244px; height: 180px; margin: 5px 5px 0px 5px;}
+    .sheet-pp1bAdditionalProficiencyLabel {
+        width: 244px;
+        height: 20px;
+        margin: 0px 5px 5px 5px;
+        padding: 2px 0px 0px 0px;
+    }
+/*------------------------------------------------------------------------------ playerPageOne body (pp1b) */
+/* column 2 */
+.sheet-pp1bArmorClassArea { grid-area: 7 / 14 / 11 / 17; }
+    .sheet-pp1bArmorClass { width: 59px; height: 36px; }
+    .sheet-pp1bArmorClassLabel { width: 59px; height: 33px; }
+    
+.sheet-pp1bInitiativeArea { grid-area: 7 / 18 / 11 / 21; }
+    .sheet-pp1bInitiative { width: 66px; height: 49px; }
+    .sheet-pp1bInitiativeLabel { width: 66px; height: 20px; }
+
+.sheet-pp1bSpeedArea { grid-area: 7 / 22 / 11 / 23; }
+    .sheet-pp1bSpeed { width: 66px; height: 49px; }
+    .sheet-pp1bSpeedLabel { width: 66px; height: 20px; }
+
+.sheet-pp1bCurrentHitPointsArea {
+    grid-area: 13 / 14 / 17 / 23;
+    display: grid;
+    grid-template-columns: 130px 103px;
+    grid-template-rows: 20px 48px 20px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    .sheet-pp1bHitPointmaximum { grid-area: 1 / 2 / 2 / 3; }
+    .sheet-pp1bHitPointmaximumLabel  { grid-area: 1 / 1 / 2 / 2; }
+    .sheet-pp1bCurrentHitPoint { grid-area: 2 / 1 / 3 / 3; }
+    .sheet-pp1bCurrentHitPointLabel { grid-area: 3 / 1 / 4 / 3; }
+    
+.sheet-pp1bTemporaryHitPointsArea { grid-area: 18 / 14 / 21 / 23; }
+    .sheet-pp1bTemporaryHitPoints { width: 233px; height: 46px; margin: 5px 0px 0px 0px;}
+    .sheet-pp1bTemporaryHitPointsLabel { width: 234px; height: 20px; }
+
+.sheet-pp1bHitDiceArea { grid-area: 24 / 14 / 25 / 19; }
+    .sheet-pp1bHitDiceTotal { width: 106; height: 21px;}
+    .sheet-pp1bHitDiceTotalCurrent { width: 106; height: 29px;}
+    .sheet-pp1bHitDiceLabel { width: 106; height: 19px;}
+
+.sheet-pp1bDeathSavesArea { grid-area: 24 / 20 / 25 / 23; }
+    .sheet-pp1bDeathSaveSuccess { width: 106; height: 25px;}
+    .sheet-pp1bDeathSaveFails { width: 106; height: 25px;}
+    .sheet-pp1bDeathSaveLabel { width: 106; height: 19px;}
+
+.sheet-pp1bAttacksCastingArea { grid-area: 27 / 12 / 29 / 25; }
+    .sheet-pp1bAttacksCasting { width: 259; height: 271px; }
+    .sheet-pp1bAttacksCastingLabel { width: 259; height: 20px; }
+
+
+.sheet-pp1bCurrency { 
+    grid-area: 30 / 11 / 33 / 16;
+    display: grid;
+    grid-template-columns: 14px 8px 51px;
+    grid-template-rows: 12px 8px 13px 9px 8px 8px 13px 9px 9px 8px 13px 9px 8px 8px 13px 9px 8px 8px 13px 9px 2px ;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    .sheet-pp1bCurrencyCP { grid-area: 2 / 3 / 5 / 4; }
+    .sheet-pp1bCurrencyCPLabel  { grid-area: 3 / 1 / 4 / 2; }
+    .sheet-pp1bCurrencySP { grid-area: 6 / 3 / 9 / 4; }
+    .sheet-pp1bCurrencySPLabel  { grid-area: 7 / 1 / 8 / 2; }
+    .sheet-pp1bCurrencyEP { grid-area: 10 / 3 / 13  / 4; }
+    .sheet-pp1bCurrencyEPLabel  { grid-area: 11 / 1 / 12  / 2; }
+    .sheet-pp1bCurrencyGP { grid-area: 14 / 3 / 17 / 4; }
+    .sheet-pp1bCurrencyGPLabel  { grid-area: 15 / 1 / 16 / 2; }
+    .sheet-pp1bCurrencyPP { grid-area: 18 / 3 / 21 / 4; }
+    .sheet-pp1bCurrencyPPLabel  { grid-area: 19 / 1 / 20 / 2; }
+
+.sheet-pp1bEquipmentUpper { grid-area: 30 / 16 / 33 / 25; }
+
+.sheet-pp1bEquipmentLowerArea { grid-area: 33 / 12 / 34 / 25; }
+    .sheet-pp1bEquipmentLower { width: 255; height: 44px; }
+    .sheet-pp1bEquipmentLowerLabel { width: 255; height: 20px; }
+
+/*------------------------------------------------------------------------------ playerPageOne body (pp1b) */
+/* column 3 */
+.sheet-pp1bTraitsArea { grid-area: 7 / 27 / 14 / 29; }
+    .sheet-pp1bTraits { width: 233; height: 71px; }
+    .sheet-pp1bTraitsLabel { width: 233; height: 20px; }
+    .sheet-pp1bIdealsArea { grid-area: 16 / 27 / 17 / 29;  }
+    .sheet-pp1bIdeals { width: 233; height: 50px; }
+    .sheet-pp1bIdealsLabel { width: 233; height: 20px; }
+    .sheet-pp1bBondsArea { grid-area: 19 / 27 / 22 / 29;  }
+    .sheet-pp1bBonds { width: 233; height: 51px; }
+    .sheet-pp1bBondsLabel { width: 233; height: 20px; }
+    .sheet-pp1bFlawsArea { grid-area: 24 / 27 / 26 / 29; }
+    .sheet-pp1bFlaws { width: 233; height: 51px; }
+    .sheet-pp1bFlawsLabel { width: 233; height: 20px; }
+    .sheet-pp1bFeaturesArea { grid-area: 27 / 26 / 34 / 30; }
+    .sheet-pp1bFeatures { width: 259; height: 549px; }
+    .sheet-pp1bFeaturesLabel { width: 259; height: 20px; }
+
+.sheet-playerPageTwo {
+    width: 870px;
+    min-width: 870px;
+	height: 1133px;
+    background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/secondPage.svg");
+	background-position: center center;
+	background-size: contain;
+	background-color: white;
+	display: grid;
+    grid-template-columns: 32px 18px 36px 200px 26px 57px 5px 205px 27px 218px 13px 9px 24px;
+    grid-template-rows: 42px 18px 48px 17px 33px 26px 216px 24px 64px 20px 14px 15px 290px 20px 13px 226px 20px 27px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+/* playerPageTwoHeading (pp2h) */
+.sheet-pp2hTop { grid-area: 1 / 1 / 2 / 14; }
+
+.sheet-pp2hCharacterName {
+    grid-area: 3 / 3 / 4 / 7;
+    padding: 3px 3px 5px 3px;
+}
+
+.sheet-pp2hCharacterNameLabel {
+    grid-area: 4 / 4 / 4 / 7;
+    padding: 2px 0px 0px 1px;
+}
+
+.sheet-pp2hDescription { 
+    grid-area: 2 / 8 / 5 / 12;
+    display: grid;
+    grid-template-columns: 5px 149px 3px 149px 3px 149px 5px;
+    grid-template-rows: 5px 20px 15px 20px 15px 6px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    .sheet-pp2hAge { grid-area: 2 / 2 / 3 / 3; }
+    .sheet-pp2hAgeLabel { grid-area: 3 / 2 / 4 / 3; }
+    .sheet-pp2hHeight { grid-area: 2 / 4 / 3 / 5; }
+    .sheet-pp2hHeightLabel { grid-area: 3 / 4 / 4 / 5; }
+    .sheet-pp2hWeight { grid-area: 2 / 6 / 3 / 7; }
+    .sheet-pp2hWeightLabel { grid-area: 3 / 6 / 4 / 7; }
+    .sheet-pp2hEyes { grid-area: 4 / 2 / 5 / 3; }
+    .sheet-pp2hEyesLabel { grid-area: 5 / 2 / 6 / 3; }
+    .sheet-pp2hSkin  { grid-area: 4 / 4 / 5 / 5; }
+    .sheet-pp2hSkinLabel { grid-area: 5 / 4 / 6 / 5; }
+    .sheet-pp2hHair { grid-area: 4 / 6 / 5 / 7; }
+    .sheet-pp2hHairLabel { grid-area: 5 / 6 / 6 / 7; }
+
+.sheet-pp2hBottom { grid-area: 5 / 1 / 6 / 14; }
+
+/* playerPageTwoBody (pp2b) */
+/* column 1  */
+.sheet-pp2bAppearanceArea { grid-area: 6 / 2 / 10 / 5; }
+    .sheet-pp2bAppearance { width: 254; height: 330px; }
+    .sheet-pp2bAppearanceLabel { width: 254; height: 20px; }
+.sheet-pp2bBackstoryArea { grid-area: 13 / 2 / 16 / 5; }
+    .sheet-pp2bBackstory { width: 254; height: 549px; }
+    .sheet-pp2bBackstoryLabel { width: 254; height: 20px; }
+/* playerPageTwoBody (pp2b) */
+/* column 2  */
+.sheet-pp2bAlliesOrganizationLeft { grid-area: 6 / 6 / 10 / 9; }
+.sheet-pp2bOrganizationName { grid-area: 7 / 10 / 8 / 11; }
+.sheet-pp2bOrganizationSymbol { grid-area: 8 / 10 / 9 / 11; }
+.sheet-pp2bAlliesOrganizationRight { grid-area: 9 / 9 / 10 / 13; }
+.sheet-pp2bOrganizationLabel { grid-area: 10 / 6 / 11 / 13; }
+
+.sheet-pp2bAdditionalFeaturesLeft { grid-area: 12 / 6 / 14 / 9; }
+.sheet-pp2bAdditionalFeaturesRight { grid-area: 12 / 9 / 14 / 13; }
+.sheet-pp2bAdditionalFeaturesLabel { grid-area: 14 / 6 / 15 / 13; }
+
+.sheet-pp2bTreasureLeft { grid-area: 16 / 6 / 17 / 9; }
+.sheet-pp2bTreasureRight { grid-area: 16 / 9 / 17 / 13; }
+.sheet-pp2bTreasureLabel { grid-area: 17 / 6 / 18 / 13; }
+
+.sheet-playerPageThree {
+    width: 870px;
+    min-width: 870px;
+	height: 1133px;
+    background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/spellsPage.svg");
+	background-position: center center;
+	background-size: contain;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 32px 18px 10px 15px 11px 42px 9px 151px 24px 28px 34px 30px 4px 9px 88px 48px 15px 21px 28px 37px 31px 9px 13px 101px 29px 8px 25px;
+	grid-template-rows: 42px 8px 10px 35px 13px 17px 33px 25px 40px 178px 20px 10px 3px 38px 3px 30px 12px 40px 116px 13px 40px 31px 13px 40px 29px 14px 29px 11px 1px 40px 167px 32px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+/* playerPageThreeHeading (pp3h) */
+.sheet-pp3hTop { grid-area: 1 / 1 / 2 / 28; }
+
+.sheet-pp3hCastingClass {
+    grid-area: 4 / 3 / 6 / 12;
+    padding: 3px 3px 5px 3px;
+}
+
+.sheet-pp3hCastingClassLabel {
+    grid-area: 6 / 6 / 7 / 12;
+    padding: 2px 0px 0px 1px;
+}
+
+.sheet-pp3hSpellCastingAbility { grid-area: 3 / 13 / 5 / 16; }
+.sheet-pp3hSpellCastingAbilityLabel { grid-area: 5 / 13 / 7 / 16; }
+.sheet-pp3hSpellSaveDC { grid-area: 3 / 17 / 5 / 21; }
+.sheet-pp3hSpellSaveDCLabel { grid-area: 5 / 17 / 7 / 21; }
+.sheet-pp3hSpellAttackBonus { grid-area: 3 / 24 / 5 / 25; }
+.sheet-pp3hSpellAttackBonusLabel { grid-area: 5 / 24 / 7 / 25; }
+.sheet-pp3hBottom { grid-area: 7 / 1 / 8 / 28; }
+
+.sheet-pp3hSp0 { grid-area: 9 / 2 / 10 / 4; }
+.sheet-pp3hCantrip { grid-area: 9 / 5 / 10 / 9; }
+.sheet-pp3hSp0List { grid-area: 10 / 2 / 11 / 9; }
+
+.sheet-pp3hSp1 { grid-area: 13 / 2 / 15 / 4; }
+.sheet-pp3hSp1Slots { grid-area: 13 / 4 / 15 / 7; }
+.sheet-pp3hSp1SlotsUsed { grid-area: 13 / 8 / 15 / 9; }
+.sheet-pp3hSp1List { grid-area: 15 / 2 / 23 / 9; }
+        
+.sheet-pp3hSp2 { grid-area: 24 / 2 / 25 / 4; }
+.sheet-pp3hSp2Slots { grid-area: 24 / 4 / 25 / 7; }
+.sheet-pp3hSp2SlotsUsed { grid-area: 24 / 8 / 25 / 9; }
+.sheet-pp3hSp2List { grid-area: 25 / 2 / 32 / 9; }
+
+.sheet-pp3hSp3 { grid-area: 9 / 10 / 10 / 11; }
+.sheet-pp3hSp3Slots { grid-area: 9 / 11 / 10 / 14; }
+.sheet-pp3hSp3SlotsUsed { grid-area: 9 / 15 / 10 / 18; }
+.sheet-pp3hSp3List { grid-area: 10 / 10 / 17 / 18; }
+
+.sheet-pp3hSp4 { grid-area: 18 / 10 / 19 / 11; }
+.sheet-pp3hSp4Slots { grid-area: 18 / 11 / 19 / 14; }
+.sheet-pp3hSp4SlotsUsed { grid-area: 18 / 15 / 19 / 18; }
+.sheet-pp3hSp4List { grid-area: 19 / 10 / 26 / 18; }
+
+.sheet-pp3hSp5 { grid-area: 27 / 10 / 29 / 11; }
+.sheet-pp3hSp5Slots { grid-area: 27 / 11 / 29 / 14; }
+.sheet-pp3hSp5SlotsUsed { grid-area: 27 / 15 / 29 / 18; }
+.sheet-pp3hSp5List { grid-area: 29 / 10 / 32 / 18; }
+
+.sheet-pp3hSp6 { grid-area: 9 / 19 / 10 / 20; } 
+.sheet-pp3hSp6Slots { grid-area: 9 / 20 / 10 / 22; } 
+.sheet-pp3hSp6SlotsUsed { grid-area: 9 / 23 / 10 / 27; } 
+.sheet-pp3hSp6List { grid-area: 10 / 19 / 12 / 27; } 
+
+.sheet-pp3hSp7 { grid-area: 13 / 19 / 15 / 20; } 
+.sheet-pp3hSp7Slots { grid-area: 13 / 20 / 15 / 22; } 
+.sheet-pp3hSp7SlotsUsed { grid-area: 13 / 23 / 15 / 27; } 
+.sheet-pp3hSp7List { grid-area: 15 / 19 / 20 / 27; } 
+
+.sheet-pp3hSp8 { grid-area: 21 / 19 / 22 / 20; }  
+.sheet-pp3hSp8Slots { grid-area: 21 / 20 / 22 / 22; }  
+.sheet-pp3hSp8SlotsUsed { grid-area: 21 / 23 / 22 / 27; } 
+.sheet-pp3hSp8List { grid-area: 22 / 19 / 28 / 27; } 
+
+.sheet-pp3hSp9 { grid-area: 30 / 19 / 31 / 20; } 
+.sheet-pp3hSp9Slots { grid-area: 30 / 20 / 31 / 22; }
+.sheet-pp3hSp9SlotsUsed { grid-area: 30 / 23 / 31 / 27; }
+.sheet-pp3hSp9List { grid-area: 31 / 19 / 32 / 27; }
+
+.sheet-playerPageOne,
+.sheet-playerPageTwo,
+.sheet-playerPageThree {
+	display: none;
+}
+
+/* show the selected tab */
+.sheet-activePage[value="p1"] ~ div.sheet-playerPageOne,
+.sheet-activePage[value="p2"] ~ div.sheet-playerPageTwo,
+.sheet-activePage[value="p3"] ~ div.sheet-playerPageThree {
+	display: grid;
+}
+
+
+/* > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE */
+.sheet-pp3hTop,
+.sheet-pp3hBottom,
+.sheet-pp1hTop,
+.sheet-pp2hTop,
+.sheet-pp1hBottom,
+.sheet-pp2hBottom { background: rgba(255, 0, 255, 0.4); } /* Bonus Areas */
+
+.sheet-pp2hCharacterName,
+.sheet-pp3hCastingClass { background: rgba(255, 255, 0, 0.4); } /* Huge Font Span */
+
+.sheet-pp2hSkinLabel,
+.sheet-pp2hWeightLabel,
+.sheet-pp2hAgeLabel,
+.sheet-pp2hHairLabel,
+.sheet-pp2hEyesLabel,
+.sheet-pp2hHeightLabel,
+.sheet-pp3hCastingClassLabel,
+.sheet-pp2hCharacterNameLabel { background: rgba(255, 165, 0, 0.4); } /*left aligned button */
+
+.sheet-pp2hSkin,
+.sheet-pp2hWeight,
+.sheet-pp2hAge,
+.sheet-pp2hHair,
+.sheet-pp2hEyes,
+.sheet-pp2hHeight { background: rgba(0, 128, 128, 0.4); } /*left aligned button */
+
+.sheet-pp1bAcrobatics,
+.sheet-pp1bArcana,
+.sheet-pp1bDeception,
+.sheet-pp1bInsight,
+.sheet-pp1bInvestigation,
+.sheet-pp1bNature,
+.sheet-pp1bPerformance,
+.sheet-pp1bReligion,
+.sheet-pp1bStealth { background: rgba(0, 206, 209, 0.4); } /*left several items row2*/
+
+.sheet-pp1bAnimalhHandling,
+.sheet-pp1bAthletics,
+.sheet-pp1bHistory,
+.sheet-pp1bIntimidation,
+.sheet-pp1bMedicine,
+.sheet-pp1bPerception,
+.sheet-pp1bPersuasion,
+.sheet-pp1bSleightOfHand,
+.sheet-pp1bSurvival { background: rgba(30, 144, 255, 0.4); } /*left several items row1*/
+
+.sheet-pp1bTraits,
+.sheet-pp1bIdeals,
+.sheet-pp1bBonds,
+.sheet-pp1bFlaws,
+.sheet-pp1bFeatures,
+.sheet-pp1bEquipmentUpper,
+.sheet-pp1bAdditionalProficiency { background: rgba(255, 105, 180, 0.4); } /*text area row1*/
+
+.sheet-pp1bEquipmentLower { background: rgba(200, 80, 150, 0.4); } /*text area row2*/
+
+
+.sheet-pp1bCurrencyCPLabel,
+.sheet-pp1bCurrencySPLabel,
+.sheet-pp1bCurrencyEPLabel,
+.sheet-pp1bCurrencyGPLabel,
+.sheet-pp1bCurrencyPPLabel { background: rgba(255, 123, 30, 0.3); } /*small Center number*/
+
+.sheet-pp1bHitPointmaximum{ background: rgba(255, 255, 0, 0.3); } /*normal Center number*/
+
+.sheet-pp1bTemporaryHitPoints,
+.sheet-pp1bCurrentHitPoint,
+.sheet-pp1bHitDice,
+.sheet-pp1bAttacksCasting { background: rgba(0, 255, 255, 0.3); }
+
+
+
+/* > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE */
+
+.sheet-pp2bAdditionalFeaturesLabel,
+.sheet-pp2bTreasureLabel,
+.sheet-pp2bOrganizationLabel,
+.sheet-pp2bAppearanceLabel,
+.sheet-pp2bBackstoryLabel,
+.sheet-pp1bTraitsLabel,
+.sheet-pp1bIdealsLabel,
+.sheet-pp1bBondsLabel,
+.sheet-pp1bFlawsLabel,
+.sheet-pp1bFeaturesLabel,
+.sheet-pp1bEquipmentLowerLabel,
+.sheet-pp1bAttacksCastingLabel,
+.sheet-pp1bDeathSaveSuccess,
+.sheet-pp1bDeathSaveLabel,
+.sheet-pp1bHitDiceTotal,
+.sheet-pp1bHitDiceLabel,
+.sheet-pp1bTemporaryHitPointsLabel,
+.sheet-pp1bCurrentHitPointLabel,   
+.sheet-pp1bSpeedLabel,
+.sheet-pp1bInitiativeLabel,
+.sheet-pp1bArmorClassLabel { background: rgba(200,55,0, 0.4); }
+
+.sheet-pp1bCurrencyCP,
+.sheet-pp1bCurrencySP,
+.sheet-pp1bCurrencyEP,
+.sheet-pp1bCurrencyGP,
+.sheet-pp1bCurrencyPP,
+.sheet-pp1bDeathSaveFails,
+.sheet-pp1bHitDiceTotalCurrent,
+.sheet-pp1bHitPointmaximumLabel { background: rgba(255,0,0, 0.4); }
+
+
+
+.sheet-pp1bSpeed,
+.sheet-pp1bInitiative,
+.sheet-pp1bArmorClass,
+.sheet-pp3hSp1Slots,
+.sheet-pp3hSp2Slots,
+.sheet-pp3hSp3Slots,
+.sheet-pp3hSp4Slots,
+.sheet-pp3hSp5Slots,
+.sheet-pp3hSp6Slots,
+.sheet-pp3hSp7Slots,
+.sheet-pp3hSp8Slots,
+.sheet-pp3hSp9Slots,
+.sheet-pp3hSpellAttackBonus,
+.sheet-pp3hSpellSaveDC,
+.sheet-pp3hSpellCastingAbility,
+.sheet-pp2bTreasureRight,
+.sheet-pp2bAdditionalFeaturesRight,
+.sheet-pp2bAlliesOrganizationRight,
+.sheet-pp3hSp0,
+.sheet-pp3hSp1,
+.sheet-pp3hSp2,
+.sheet-pp3hSp3,
+.sheet-pp3hSp4,
+.sheet-pp3hSp5,
+.sheet-pp3hSp6,
+.sheet-pp3hSp7,
+.sheet-pp3hSp8,
+.sheet-pp3hSp9 { background: rgba(255, 255, 0, 0.3); }
+
+.sheet-pp3hSp0List,
+.sheet-pp3hSp1List,
+.sheet-pp3hSp2List,
+.sheet-pp3hSp3List,
+.sheet-pp3hSp4List,
+.sheet-pp3hSp5List,
+.sheet-pp3hSp6List,
+.sheet-pp3hSp7List,
+.sheet-pp3hSp8List,
+.sheet-pp3hSp9List,
+.sheet-pp2bOrganizationSymbol { background: rgba(0, 0, 255, 0.3); }
+
+
+.sheet-pp3hCantrip,
+.sheet-pp3hSp1SlotsUsed,
+.sheet-pp3hSp2SlotsUsed,
+.sheet-pp3hSp3SlotsUsed,
+.sheet-pp3hSp4SlotsUsed,
+.sheet-pp3hSp5SlotsUsed,
+.sheet-pp3hSp6SlotsUsed,
+.sheet-pp3hSp7SlotsUsed,
+.sheet-pp3hSp8SlotsUsed,
+.sheet-pp3hSp9SlotsUsed,
+.sheet-pp3hSpellAttackBonusLabel,
+.sheet-pp3hSpellSaveDCLabel,
+.sheet-pp3hSpellCastingAbilityLabel,
+.sheet-pp2bTreasureLeft,
+.sheet-pp2bAdditionalFeaturesLeft,
+.sheet-pp2bOrganizationName,
+.sheet-pp2bAlliesOrganizationLeft,
+.sheet-pp2bAppearance,
+.sheet-pp2bBackstory { background: rgba(0, 255, 255, 0.3); }
+
+
+
+.sheet-temp {
+position:absolute;
+  top: 100px;
+}
+
+
+
+/* > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE > > TEMP REMOVE */
+
+
+
+
+
