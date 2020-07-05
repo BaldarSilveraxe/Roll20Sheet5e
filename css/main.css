@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
 
+/* ===GLOBAL=== */
+.sheet-global_flex_one {
+	flex: 1;
+}
+/* ===PRIMARY=== */
 .sheet-wrap {
 	font-family: "Overpass", Arial;
 	font-size: 12px;
@@ -7,193 +12,471 @@
 	min-width: 870px;
 }
 
-/* ----------------------------------------------------------------------------- pages */
-.sheet-pp1, .sheet-pp2, .sheet-pp3 {
+.sheet-pp1,
+.sheet-pp2,
+.sheet-pp3 {
 	display: grid;
-    grid-template-columns: 299px 280px 291px;
-    grid-template-rows: 156px 977px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    width: 870px;
+	grid-template-columns: 299px 280px 291px;
+	grid-template-rows: 156px 977px;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	width: 870px;
 	height: 1133px;
-    background-color: white;
+	background-color: white;
 }
 
 .sheet-pp1 {
-    background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/mainPage.svg");
+	background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/mainPage.svg");
 	background-position: center center;
 	background-size: contain;
 }
 
 .sheet-pp2 {
-    background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/secondPage.svg");
+	background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/secondPage.svg");
 	background-position: center center;
 	background-size: contain;
 }
 
 .sheet-pp3 {
-    background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/spellsPage.svg");
+	background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/spellsPage.svg");
 	background-position: center center;
 	background-size: contain;
 }
-/* ----------------------------------------------------------------------------- pages */
 
-/* ----------------------------------------------------------------------------- pages show hide */
 .sheet-pp1,
 .sheet-pp2,
 .sheet-pp3 {
-    display: none;
+	display: none;
 }
 
-.sheet-activePage[value="p1"] ~ div.sheet-pp1, 
-.sheet-activePage[value="p2"] ~ div.sheet-pp2, 
-.sheet-activePage[value="p3"] ~ div.sheet-pp3 {
-    display: grid;
+.sheet-activePage[value="p1"]~div.sheet-pp1,
+.sheet-activePage[value="p2"]~div.sheet-pp2,
+.sheet-activePage[value="p3"]~div.sheet-pp3 {
+	display: grid;
 }
-/* ----------------------------------------------------------------------------- pages show hide */
 
-/* ----------------------------------------------------------------------------- header players pages */
+/* ===HEADER=== */
 .sheet-header {
-    grid-area: 1 / 1 / 2 / 4;
-    display: grid;
-    grid-template-columns: 375px 495px;
-    grid-template-rows: 42px 83px 31px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+	grid-area: 1 / 1 / 2 / 4;
+	display: grid;
+	grid-template-columns: 375px 495px;
+	grid-template-rows: 42px 83px 31px;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
 }
 
-.sheet-headerUpperBand { grid-area: 1 / 1 / 2 / 3; }
-
-.sheet-headerRibbon { grid-area: 2 / 1 / 3 / 2; }
-.sheet-ribbon { 
-    width: 319px;
-    height: 46px;
-    margin: 18px 0px 0px 50px;
-}
-.sheet-ribbonLabel {
-    width: 283px;
-    height: 17px;
-    margin: 2px 0px 0px 86px;
+.sheet-header_top {
+	grid-area: 1 / 1 / 2 / 3;
 }
 
-.sheet-headerBigBox {
-    grid-area: 2 / 2 / 3 / 3;
-    padding: 1px 0px 0px 0px;
+.sheet-header_ribbon {
+	grid-area: 2 / 1 / 3 / 2;
 }
-.sheet-bigBoxRow {
-    display: flex; 
-    width: 450px; 
-    height: 20px;
-    margin: 0px 0px 0px 6px;
+
+.sheet-ribbon_input {
+	width: 319px;
+	height: 46px;
+	margin: 18px 0px 0px 50px;
 }
-.sheet-bigBoxCol { flex: 1;}
-.sheet-bigBoxColLabel { box-sizing: border-box; border-top: 2px solid gray; }
-.sheet-bigBoxRow2 {
-    display: flex; 
-    width: 390px; 
-    height: 46px;
-    margin: 7px 0px 0px 36px;
+
+.sheet-ribbon_label {
+	width: 283px;
+	height: 17px;
+	margin: 2px 0px 0px 86px;
 }
-.sheet-bigBoxRow3 {
-    display: flex; 
-    width: 390px; 
-    height: 27px;
-    margin: 2px 0px 0px 36px;
+
+.sheet-header_biobox {
+	grid-area: 2 / 2 / 3 / 3;
+	padding: 1px 0px 0px 0px;
 }
-.sheet-bigBoxCola1, .sheet-bigBoxColb1, .sheet-bigBoxColc1,
-.sheet-bigBoxCola2, .sheet-bigBoxColb2, .sheet-bigBoxColc2 {
+
+.sheet-biobox_row {
+	display: flex;
+	width: 450px;
+	height: 20px;
+	margin: 0px 0px 0px 6px;
+}
+
+.sheet-biobox_label {
+	box-sizing: border-box;
+	border-top: 2px solid gray;
+}
+
+.sheet-biobox_row_spells_upper {
+	display: flex;
+	width: 390px;
+	height: 46px;
+	margin: 7px 0px 0px 36px;
+}
+
+.sheet-biobox_row_spells_lower {
+	display: flex;
+	width: 390px;
+	height: 27px;
+	margin: 2px 0px 0px 36px;
+}
+
+.sheet-biobox_row_spells_a1, 
+.sheet-biobox_row_spells_b1, 
+.sheet-biobox_row_spells_c1 {
     width: 86px;
     height: 46px;
 }
-.sheet-bigBoxColb1, .sheet-bigBoxColb2 { margin: 0px 0px 0px 64px; }
-.sheet-bigBoxColc1, .sheet-bigBoxColc2 { margin: 0px 0px 0px 68px; }
-.sheet-bigBoxCola2, .sheet-bigBoxColb2, .sheet-bigBoxColc2 { height: 27px; }
-    
-.sheet-headerLowerBand { grid-area: 3 / 1 / 4 / 3; }
+
+.sheet-biobox_row_spells_a2, 
+.sheet-biobox_row_spells_b2, 
+.sheet-biobox_row_spells_c2 {
+    width: 86px;
+    height: 27px;
+}
+
+.sheet-biobox_row_spells_b1, 
+.sheet-biobox_row_spells_b2 { 
+    margin: 0px 0px 0px 64px; 
+}
+
+.sheet-biobox_row_spells_c1, 
+.sheet-biobox_row_spells_c2 { 
+    margin: 0px 0px 0px 68px;
+}
+
+.sheet-header_bottom {
+	grid-area: 3 / 1 / 4 / 3;
+}
+
+
 /* ----------------------------------------------------------------------------- header players pages */
 
-/* ----------------------------------------------------------------------------- body columns players pages */
-.sheet-columnA { grid-area: 2 / 1 / 3 / 2; } /*there get replaced below */
-.sheet-columnB { grid-area: 2 / 2 / 3 / 3; } /*there get replaced below */
-.sheet-columnC { grid-area: 2 / 3 / 3 / 4; } /*there get replaced below */
-.sheet-columnBC { grid-area: 2 / 2 / 3 / 4; } /*there get replaced below */
+
 /* ----------------------------------------------------------------------------- body columns players pages */
 
-.sheet-pp1ColumnA { 
-    grid-area: 2 / 1 / 3 / 2; 
-	display: grid;
-    grid-template-columns: 121px 178px;
-    grid-template-rows: 684px 293px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+/* These get replaced below. pp1ColumnA is done. */
+.sheet-columnA {
+	grid-area: 2 / 1 / 3 / 2;
 }
+
+/* These get replaced below. */
+.sheet-columnB {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+/* These get replaced below. */
+.sheet-columnC {
+	grid-area: 2 / 3 / 3 / 4;
+}
+
+/* These get replaced below. */
+.sheet-columnBC {
+	grid-area: 2 / 2 / 3 / 4;
+}
+
+/* ----------------------------------------------------------------------------- body columns players pages */
+
+/* ===BODY Page One Column A=== */
+.sheet-pp1ColumnA {
+	grid-area: 2 / 1 / 3 / 2;
+	display: grid;
+	grid-template-columns: 121px 178px;
+	grid-template-rows: 684px 293px;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
 .sheet-abilities {
 	grid-area: 1 / 1 / 2 / 2;
 }
-.sheet-strengthLabel { 
-    width: 66px;
-    height: 20px;
-    margin: 32px 0px 0px 39px;
+
+.sheet-strengthLabel {
+	width: 66px;
+	height: 20px;
+	margin: 32px 0px 0px 39px;
 }
-.sheet-statMod { 
-    width: 66px;
-    height: 42px;
-    margin: 0px 0px 0px 39px;
+
+.sheet-statMod {
+	width: 66px;
+	height: 42px;
+	margin: 0px 0px 0px 39px;
 }
-.sheet-statScore { 
-    width: 66px;
-    height: 26px;
-    margin: 0px 0px 0px 39px;
+
+.sheet-statScore {
+	width: 66px;
+	height: 26px;
+	margin: 0px 0px 0px 39px;
 }
-.sheet-statLabel { 
-    width: 66px;
-    height: 20px;
-    margin: 18px 0px 0px 39px;
+
+.sheet-statLabel {
+	width: 66px;
+	height: 20px;
+	margin: 18px 0px 0px 39px;
 }
-.sheet-savesSkills { grid-area: 1 / 2 / 2 / 3; }
+
+.sheet-savesSkills {
+	grid-area: 1 / 2 / 2 / 3;
+}
 
 .sheet-inspirationWrap {
-    display: flex;
-    width: 163px;
-    height: 23px;
-    margin: 16px 0px 0px 7px;
+	display: flex;
+	width: 163px;
+	height: 23px;
+	margin: 16px 0px 0px 7px;
 }
-.sheet-inspiration { width: 37px; height: 23px; }
-.sheet-inspirationLabel { width: 121px; height: 23px;  margin: 0px 0px 0px 5px; }
 
-.sheet-proficiencyWrap {  display: flex;  width: 163px; height: 31px; margin: 29px 0px 0px 7px; }
-.sheet-proficiency { width: 41px; height: 31px; }
-.sheet-proficiencyLabel { width: 119px; height: 31px;  margin: 0px 0px 0px 3px; }
+.sheet-inspiration {
+	width: 37px;
+	height: 23px;
+}
 
-.sheet-saveWrap { display: flex; width: 149px; height: 20px; margin: 0px 0px 0px 13px;}
-.sheet-saveSTRWrap { margin: 23px 0px 0px 13px; }
-.sheet-saveProficiency { width: 20px; height: 20px; }
+.sheet-inspirationLabel {
+	width: 121px;
+	height: 23px;
+	margin: 0px 0px 0px 5px;
+}
+
+.sheet-proficiencyWrap {
+	display: flex;
+	width: 163px;
+	height: 31px;
+	margin: 29px 0px 0px 7px;
+}
+
+.sheet-proficiency {
+	width: 41px;
+	height: 31px;
+}
+
+.sheet-proficiencyLabel {
+	width: 119px;
+	height: 31px;
+	margin: 0px 0px 0px 3px;
+}
+
+.sheet-saveWrap {
+	display: flex;
+	width: 149px;
+	height: 20px;
+	margin: 0px 0px 0px 13px;
+}
+
+.sheet-saveSTRWrap {
+	margin: 23px 0px 0px 13px;
+}
+
+.sheet-saveProficiency {
+	width: 20px;
+	height: 20px;
+}
+
 .sheet-save {
-    box-sizing: border-box;
-    width: 25px; height: 20px; border-bottom: 1px solid gray; margin: 0px 1px 0px 1px; }
-.sheet-saveLabel {
-    width: 102px; height: 20px;
+	box-sizing: border-box;
+	width: 25px;
+	height: 20px;
+	border-bottom: 1px solid gray;
+	margin: 0px 1px 0px 1px;
 }
-.sheet-saveThrowLabel { display: block; width: 149px; height: 20px; margin: 0px 0px 0px 13px; }
 
-.sheet-skillWrap { display: flex; width: 149px; height: 20px; margin: 0px 0px 0px 13px;}
-.sheet-skillfisrtWrap { margin: 26px 0px 0px 13px; }
-.sheet-skillProficiency { width: 24px; height: 20px; }
+.sheet-saveLabel {
+	width: 102px;
+	height: 20px;
+}
+
+.sheet-saveThrowLabel {
+	width: 149px;
+	height: 20px;
+	margin: 0px 0px 0px 13px;
+}
+
+.sheet-skillWrap {
+	display: flex;
+	width: 149px;
+	height: 20px;
+	margin: 0px 0px 0px 13px;
+}
+
+.sheet-skillfisrtWrap {
+	margin: 26px 0px 0px 13px;
+}
+
+.sheet-skillProficiency {
+	width: 24px;
+	height: 20px;
+}
+
 .sheet-skill {
-    box-sizing: border-box;
-    width: 25px; height: 20px; border-bottom: 1px solid gray; margin: 0px 1px 0px 1px; }
-.sheet-skillLabel { width: 102px; height: 20px; }
-.sheet-skillBoxLabel { display: block; width: 149px; height: 20px; margin: 3px 0px 0px 13px; }
+	box-sizing: border-box;
+	width: 25px;
+	height: 20px;
+	border-bottom: 1px solid gray;
+	margin: 0px 1px 0px 1px;
+}
 
-.sheet-passiveOther { grid-area: 2 / 1 / 3 / 3; }
+.sheet-skillLabel {
+	width: 102px;
+	height: 20px;
+}
+
+.sheet-skillBoxLabel {
+	width: 149px;
+	height: 20px;
+	margin: 3px 0px 0px 13px;
+}
+
+.sheet-passiveOther {
+	grid-area: 2 / 1 / 3 / 3;
+}
+
+.sheet-passiveWisdomWrap {
+	display: flex;
+	width: 260px;
+	height: 29px;
+	margin: 10px 0px 0px 31px;
+}
+
+.sheet-passiveWisdom {
+	width: 41px;
+	height: 29px;
+}
+
+.sheet-passiveWisdomLabel {
+	width: 213px;
+	height: 29px;
+	margin: 0px 0px 0px 6px;
+}
+
+.sheet-otherProficiencies {
+	width: 253px;
+	height: 190px;
+	margin: 22px 0px 0px 34px;
+}
+
+.sheet-otherProficienciesLabel {
+	width: 253px;
+	height: 20px;
+	margin: 0px 0px 0px 34px;
+}
+
+/* ===BODY Page One Column B=== */
+.sheet-pp1ColumnB {
+	grid-area: 2 / 2 / 3 / 3;
+	background: rgba(100, 50, 255, 0.1);
+}
+
+.sheet-acInitiativeSpeedWrap  {
+	display: flex;
+	width: 233px;
+	height: 69px;
+	margin: 23px 0px 0px 25px;
+}
+.sheet-armorClass {
+    width: 60px;
+	height: 69px;
+}
+.sheet-initiative {
+    width: 66px;
+	height: 69px; 
+	margin: 0px 0px 0px 20px;
+}
+.sheet-speed {
+    width: 66px;
+	height: 69px; 
+	margin: 0px 0px 0px 21px;
+}
+
+.sheet-totalHitPointsWap  {
+	display: flex;
+	width: 237px;
+	height: 20px;
+	margin: 16px 0px 0px 23px;
+}
+.sheet-hitPointMaximumLabel  {
+    width: 94px;
+	height: 20px;
+}
+.sheet-hitPointMaximum  {
+    width: 143px;
+	height: 20px;
+}    
+.sheet-currentHitPoints  {
+	width: 237px;
+	height: 48px;
+	margin: 0px 0px 0px 23px;
+}
+
+.sheet-currentHitPointsLabel {
+    width: 237px;
+	height: 20px;
+	margin: 0px 0px 0px 23px;
+}
+
+.sheet-temporaryHitPoints {
+	width: 237px;
+	height: 50px;
+	margin: 8px 0px 0px 23px; background: rgba(255, 0, 255, 0.3);
+}
+.sheet-temporaryHitPointsLabel {
+	width: 237px;
+	height: 20px;
+	margin: 0px 0px 0px 23px;
+}
+
+.sheet-hitDiceDeathSavesWrap {
+	display: flex;
+	width: 233px;
+	height: 69px;
+	margin: 15px 0px 0px 25px;
+}
+
+.sheet-hitDiceWrap {
+    width: 106px;
+	height: 69px; 
+}
+
+.sheet-totalWrap {
+    display: flex;
+    width: 106px;
+	height: 20px;
+}
+.sheet-totalLabel {
+   width: 50px;
+	height: 20px; background: rgba(255, 0, 255, 0.3); 
+}
+.sheet-total {
+   width: 56px;
+	height: 20px; background: rgba(255, 0, 0, 0.3); 
+}
+.sheet-hitDice {
+    width: 106px;
+	height: 29px;
+    background: rgba(255, 255, 0, 0.3);
+}
+
+.sheet-hitDiceLabel {
+   width: 106px;
+	height: 20px; background: rgba(255, 0, 0, 0.3); 
+}
+
+.sheet-deathSaves {
+    width: 106px;
+	height: 69px; margin: 0px 0px 0px 20px; background: rgba(255, 255, 0, 0.3);
+}
+
+.sheet-attacksSpellcasting {
+	width: 233px;
+	height: 69px;
+	margin: 23px 0px 0px 25px; background: rgba(255, 0, 255, 0.3);
+}
+
+.sheet-coinEquipmenttWrap {
+	display: flex;
+	width: 233px;
+	height: 69px;
+	margin: 23px 0px 0px 25px; background: rgba(255, 0, 255, 0.3);
+}
 
 
-.sheet-passiveWisdomWrap { display: flex; width: 260px; height: 29px; margin: 10px 0px 0px 31px; }
-.sheet-passiveWisdom { width: 41px; height: 29px; }
-.sheet-passiveWisdomLabel { width: 213px; height: 29px; margin: 0px 0px 0px 6px; } 
 
-.sheet-otherProficiencies { width: 253px; height: 190px; margin: 22px 0px 0px 34px; }
-.sheet-otherProficienciesLabel { width: 253px; height: 20px; margin: 0px 0px 0px 34px; }
+
+
+
 
 
 
@@ -204,17 +487,23 @@
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TEMP stuff below */
+
 .sheet-temp {
-    position:absolute;
-    top: 100px;
+	position: absolute;
+	top: 100px;
+}
+
+.sheet-header_top,
+.sheet-header_bottom {
+	background: rgba(255, 0, 255, 0.3);
 }
 
 
-
-
-.sheet-headerUpperBand,
-.sheet-headerLowerBand { background: rgba(255, 0, 255, 0.3); } /* Magenta */
-
+/* Magenta */
+.sheet-hitPointMaximum,
+.sheet-armorClass,
+.sheet-initiative,
+.sheet-speed,
 .sheet-otherProficiencies,
 .sheet-passiveWisdom,
 .sheet-skill,
@@ -222,8 +511,15 @@
 .sheet-proficiency,
 .sheet-inspiration,
 .sheet-statScore,
-.sheet-ribbon { background: rgba(0, 255, 0, 0.3); } /* green */
+.sheet-ribbon_input {
+	background: rgba(0, 255, 0, 0.3);
+}
 
+
+/* green */
+.sheet-hitPointMaximumLabel,
+.sheet-temporaryHitPointsLabel,
+.sheet-currentHitPointsLabel,
 .sheet-otherProficienciesLabel,
 .sheet-passiveWisdomLabel,
 .sheet-skillBoxLabel,
@@ -234,26 +530,38 @@
 .sheet-inspirationLabel,
 .sheet-statLabel,
 .sheet-strengthLabel,
-.sheet-ribbonLabel { background: rgba(255, 0, 0, 0.3); } /* red */
+.sheet-ribbon_label {
+	background: rgba(255, 0, 0, 0.3);
+}
 
+
+/* red */
+.sheet-currentHitPoints,
 .sheet-skillProficiency,
 .sheet-saveProficiency,
 .sheet-statMod,
-.sheet-bigBoxCola1,
-.sheet-bigBoxColb1,
-.sheet-bigBoxColc1,
-.sheet-bigBoxCol { background: rgba(255, 255, 0, 0.3); } /* yellow */
+.sheet-biobox_row_spells_a1,
+.sheet-biobox_row_spells_b1,
+.sheet-biobox_row_spells_c1,
+.sheet-global_flex_one {
+	background: rgba(255, 255, 0, 0.3);
+}
 
-.sheet-bigBoxCola2,
-.sheet-bigBoxColb2,
-.sheet-bigBoxColc2,
-.sheet-bigBoxColLabel { background: rgba(0, 255, 255, 0.3); } /* red */
+
+/* yellow */
+
+.sheet-biobox_row_spells_a2,
+.sheet-biobox_row_spells_b2,
+.sheet-biobox_row_spells_c2,
+.sheet-biobox_label {
+	background: rgba(0, 255, 255, 0.3);
+}
+
+
+/* red */
+
+
 /*
 .sheet-ribbonLabel
 .sheet-ribbon 
 .sheet-headerUpperBand { background: rgba(255, 0, 255, 0.3); } */
-
-
-
-
-
