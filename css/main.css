@@ -1,9 +1,11 @@
+
 @import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
 
 /* ===GLOBAL=== */
 .sheet-global_flex_one {
 	flex: 1;
 }
+
 /* ===PRIMARY=== */
 .sheet-wrap {
 	font-family: "Overpass", Arial;
@@ -140,6 +142,9 @@
     margin: 0px 0px 0px 68px;
 }
 
+
+
+
 .sheet-header_bottom {
 	grid-area: 3 / 1 / 4 / 3;
 }
@@ -173,7 +178,7 @@
 /* ----------------------------------------------------------------------------- body columns players pages */
 
 /* ===BODY Page One Column A=== */
-.sheet-pp1ColumnA {
+.sheet-pp1_column_a {
 	grid-area: 2 / 1 / 3 / 2;
 	display: grid;
 	grid-template-columns: 121px 178px;
@@ -182,91 +187,91 @@
 	grid-row-gap: 0px;
 }
 
-.sheet-abilities {
+.sheet-column_a_abilities {
 	grid-area: 1 / 1 / 2 / 2;
 }
 
-.sheet-strengthLabel {
+.sheet-abilities_str_label {
 	width: 66px;
 	height: 20px;
 	margin: 32px 0px 0px 39px;
 }
 
-.sheet-statMod {
+.sheet-abilities_modifier {
 	width: 66px;
 	height: 42px;
 	margin: 0px 0px 0px 39px;
 }
 
-.sheet-statScore {
+.sheet-abilities_score {
 	width: 66px;
 	height: 26px;
 	margin: 0px 0px 0px 39px;
 }
 
-.sheet-statLabel {
+.sheet-abilities_label {
 	width: 66px;
 	height: 20px;
 	margin: 18px 0px 0px 39px;
 }
 
-.sheet-savesSkills {
+.sheet-column_a_saveskill {
 	grid-area: 1 / 2 / 2 / 3;
 }
 
-.sheet-inspirationWrap {
+.sheet-saveskill_inspiration {
 	display: flex;
 	width: 163px;
 	height: 23px;
 	margin: 16px 0px 0px 7px;
 }
 
-.sheet-inspiration {
+.sheet-saveskill_inspiration_input {
 	width: 37px;
 	height: 23px;
 }
 
-.sheet-inspirationLabel {
+.sheet-saveskill_inspiration_label {
 	width: 121px;
 	height: 23px;
 	margin: 0px 0px 0px 5px;
 }
 
-.sheet-proficiencyWrap {
+.sheet-saveskill_proficiency {
 	display: flex;
 	width: 163px;
 	height: 31px;
 	margin: 29px 0px 0px 7px;
 }
 
-.sheet-proficiency {
+.sheet-saveskill_proficiency_input {
 	width: 41px;
 	height: 31px;
 }
 
-.sheet-proficiencyLabel {
+.sheet-saveskill_proficiency_label {
 	width: 119px;
 	height: 31px;
 	margin: 0px 0px 0px 3px;
 }
 
-.sheet-saveWrap {
+.sheet-saveskill_save {
 	display: flex;
 	width: 149px;
 	height: 20px;
 	margin: 0px 0px 0px 13px;
 }
 
-.sheet-saveSTRWrap {
+.sheet-saveskill_saveSTR {
 	margin: 23px 0px 0px 13px;
 }
 
-.sheet-saveProficiency {
+.sheet-saveskill_save_proficiency {
 	width: 20px;
 	height: 20px;
 }
 
-.sheet-save {
+.sheet-saveskill_save_input {
 	box-sizing: border-box;
 	width: 25px;
 	height: 20px;
@@ -274,34 +279,34 @@
 	margin: 0px 1px 0px 1px;
 }
 
-.sheet-saveLabel {
+.sheet-saveskill_save_label {
 	width: 102px;
 	height: 20px;
 }
 
-.sheet-saveThrowLabel {
+.sheet-saveskill_savingthrow_label {
 	width: 149px;
 	height: 20px;
 	margin: 0px 0px 0px 13px;
 }
 
-.sheet-skillWrap {
+.sheet-saveskill_skills {
 	display: flex;
 	width: 149px;
 	height: 20px;
 	margin: 0px 0px 0px 13px;
 }
 
-.sheet-skillfisrtWrap {
+.sheet-saveskill-acrobatics {
 	margin: 26px 0px 0px 13px;
 }
 
-.sheet-skillProficiency {
+.sheet-saveskill_skill_proficiency {
 	width: 24px;
 	height: 20px;
 }
 
-.sheet-skill {
+.sheet-saveskill_skill_input {
 	box-sizing: border-box;
 	width: 25px;
 	height: 20px;
@@ -309,167 +314,279 @@
 	margin: 0px 1px 0px 1px;
 }
 
-.sheet-skillLabel {
+.sheet-saveskill_skill_label {
 	width: 102px;
 	height: 20px;
 }
 
-.sheet-skillBoxLabel {
+.sheet-saveskill_skills_label {
 	width: 149px;
 	height: 20px;
 	margin: 3px 0px 0px 13px;
 }
 
-.sheet-passiveOther {
+.sheet-column_a_passiveother {
 	grid-area: 2 / 1 / 3 / 3;
 }
 
-.sheet-passiveWisdomWrap {
+.sheet-passiveother_passivewisdom {
 	display: flex;
 	width: 260px;
 	height: 29px;
 	margin: 10px 0px 0px 31px;
 }
 
-.sheet-passiveWisdom {
+.sheet-passiveother_passivewisdom_input {
 	width: 41px;
 	height: 29px;
 }
 
-.sheet-passiveWisdomLabel {
+.sheet-passiveother_passivewisdom_label {
 	width: 213px;
 	height: 29px;
 	margin: 0px 0px 0px 6px;
 }
 
-.sheet-otherProficiencies {
+.sheet-passiveother_otherproficiencies_area {
 	width: 253px;
 	height: 190px;
 	margin: 22px 0px 0px 34px;
 }
 
-.sheet-otherProficienciesLabel {
+.sheet-passiveother_otherproficiencies_label {
 	width: 253px;
 	height: 20px;
 	margin: 0px 0px 0px 34px;
 }
 
 /* ===BODY Page One Column B=== */
-.sheet-pp1ColumnB {
+.sheet-pp1_column_b {
 	grid-area: 2 / 2 / 3 / 3;
 	background: rgba(100, 50, 255, 0.1);
 }
 
-.sheet-acInitiativeSpeedWrap  {
+.sheet-column_b_acinitspeed  {
 	display: flex;
 	width: 233px;
 	height: 69px;
 	margin: 23px 0px 0px 25px;
 }
-.sheet-armorClass {
+.sheet-acinitspeed_armorclass {
     width: 60px;
 	height: 69px;
 }
-.sheet-initiative {
+.sheet-acinitspeed_armorclass_input {
+    width: 60px;
+	height: 40px;
+}
+.sheet-acinitspeed_armorclass_label {
+    width: 60px;
+	height: 29px;
+}
+
+.sheet-acinitspeed_initiative {
     width: 66px;
 	height: 69px; 
 	margin: 0px 0px 0px 20px;
 }
-.sheet-speed {
+.sheet-acinitspeed_initiative_input {
+    width: 66px;
+	height: 49px; 
+}
+.sheet-acinitspeed_initiative_label {
+    width: 66px;
+	height: 20px; 
+}
+
+.sheet-acinitspeed_speed {
     width: 66px;
 	height: 69px; 
 	margin: 0px 0px 0px 21px;
 }
+.sheet-acinitspeed_speed_input {
+    width: 66px;
+	height: 49px; 
+}
+.sheet-acinitspeed_speed_label {
+    width: 66px;
+	height: 20px;
+}
 
-.sheet-totalHitPointsWap  {
+.sheet-column_b_hitpointmaximum  {
 	display: flex;
 	width: 237px;
 	height: 20px;
 	margin: 16px 0px 0px 23px;
 }
-.sheet-hitPointMaximumLabel  {
+.sheet-hitpointmaximum_label  {
     width: 94px;
 	height: 20px;
 }
-.sheet-hitPointMaximum  {
+.sheet-hitpointmaximum_input {
     width: 143px;
 	height: 20px;
 }    
-.sheet-currentHitPoints  {
+.sheet-column_b_currenthitpoints_input  {
 	width: 237px;
 	height: 48px;
 	margin: 0px 0px 0px 23px;
 }
 
-.sheet-currentHitPointsLabel {
+.sheet-column_b_currenthitpoints_label {
     width: 237px;
 	height: 20px;
 	margin: 0px 0px 0px 23px;
 }
 
-.sheet-temporaryHitPoints {
+.sheet-column_b_temporaryhitpoints_input {
 	width: 237px;
 	height: 50px;
-	margin: 8px 0px 0px 23px; background: rgba(255, 0, 255, 0.3);
+	margin: 8px 0px 0px 23px;
 }
-.sheet-temporaryHitPointsLabel {
+.sheet-column_b_temporaryhitpoints_label {
 	width: 237px;
 	height: 20px;
 	margin: 0px 0px 0px 23px;
 }
 
-.sheet-hitDiceDeathSavesWrap {
+.sheet-column_b_hitdicedeathsaves {
 	display: flex;
 	width: 233px;
 	height: 69px;
 	margin: 15px 0px 0px 25px;
 }
 
-.sheet-hitDiceWrap {
+.sheet-hitdicedeathsaves_hitdice {
     width: 106px;
 	height: 69px; 
 }
 
-.sheet-totalWrap {
+.sheet-hitdicedeathsaves_hitdice_total {
     display: flex;
     width: 106px;
 	height: 20px;
 }
-.sheet-totalLabel {
-   width: 50px;
-	height: 20px; background: rgba(255, 0, 255, 0.3); 
+.sheet-hitdicedeathsaves_hitdice_total_label {
+    width: 50px;
+    height: 20px;
 }
-.sheet-total {
-   width: 56px;
-	height: 20px; background: rgba(255, 0, 0, 0.3); 
+.sheet-hitdicedeathsaves_hitdice_total_input {
+    width: 56px;
+	height: 20px;
 }
-.sheet-hitDice {
+.sheet-hitdicedeathsaves_hitdice_input {
     width: 106px;
 	height: 29px;
-    background: rgba(255, 255, 0, 0.3);
 }
 
-.sheet-hitDiceLabel {
+.sheet-hitdicedeathsaves_hitdice_label {
    width: 106px;
-	height: 20px; background: rgba(255, 0, 0, 0.3); 
+	height: 20px;
 }
 
-.sheet-deathSaves {
+.sheet-column_b_deathSaves {
     width: 106px;
-	height: 69px; margin: 0px 0px 0px 20px; background: rgba(255, 255, 0, 0.3);
+	height: 69px; margin: 0px 0px 0px 20px;
 }
 
-.sheet-attacksSpellcasting {
-	width: 233px;
-	height: 69px;
-	margin: 23px 0px 0px 25px; background: rgba(255, 0, 255, 0.3);
+.sheet-deathSaves_succss {
+    display: flex;
+    width: 106px;
+    height: 20px; margin: 2px 0px 0px 0px;
 }
 
-.sheet-coinEquipmenttWrap {
-	display: flex;
-	width: 233px;
+.sheet-deathSaves_failures {
+    display: flex;
+    width: 106px;
+    height: 20px; margin: 2px 0px 0px 0px;
+}
+
+.sheet-deathSaves_succss_input,
+.sheet-deathSaves_failures_input {
+    width: 40px;
+    height: 20px;
+}
+
+.sheet-deathSaves_succss_label,
+.sheet-deathSaves_failures_label {
+    width: 66px;
+    height: 20px;
+}
+
+.sheet-deathSaves_label {
+    width: 106px;
+    height: 20px; margin: 2px 0px 0px 0px;
+}
+
+
+.sheet-column_b_attacksxpellcasting{
+	width: 259px;
+	height: 271px;
+	margin: 28px 0px 0px 12px; background: rgba(255, 0, 255, 0.3);
+}
+.sheet-column_b_attacksxpellcasting_label {
+	width: 259px;
+	height: 20px;
+	margin: 0px 0px 0px 12px;
+}
+
+.sheet-column_b_coinequipment {
+	width: 266px;
 	height: 69px;
-	margin: 23px 0px 0px 25px; background: rgba(255, 0, 255, 0.3);
+	margin: 17px 0px 0px 3px;
+}
+
+.sheet-coinequipment_coinequipment_wrap {
+    display: flex;
+    width: 266px;
+	height: 197px;
+}
+
+.sheet-coinequipment_coins {
+    width: 79px;
+	height: 197px;
+}
+
+.sheet-coins_row {
+    display: flex;
+    width: 79px;
+	height: 31px; 
+	margin: 7px 0px 0px 0px; 
+}
+
+.sheet-coins_row_first {
+    margin: 12px 0px 0px 0px;
+}
+
+.sheet-coins_label {
+    width: 15px;
+	height: 31px;
+	margin: 0px 0px 0px 0px;/*update*/
+}
+
+.sheet-coins_input {
+    width: 64px;
+	height: 31px;
+	margin: 0px 0px 0px 0px;/*update*/
+}
+
+
+.sheet-coinequipment_equipmenttop_input {
+    width: 187px;
+	height: 197px;
+}
+
+
+.sheet-coinequipment_equipmentbottom_input {
+	width: 259px;
+	height: 44px;
+	margin: 0px 0px 0px 9px;;
+}
+
+.sheet-coinequipment_label {
+	width: 259px;
+	height: 20px;
+	margin: 0px 0px 0px 9px;
 }
 
 
@@ -500,46 +617,64 @@
 
 
 /* Magenta */
-.sheet-hitPointMaximum,
-.sheet-armorClass,
-.sheet-initiative,
-.sheet-speed,
-.sheet-otherProficiencies,
-.sheet-passiveWisdom,
-.sheet-skill,
-.sheet-save,
-.sheet-proficiency,
-.sheet-inspiration,
-.sheet-statScore,
+.sheet-coinequipment_equipmenttop_input,
+.sheet-deathSaves_succss_input,
+.sheet-deathSaves_failures_input,
+.sheet-hitdicedeathsaves_hitdice_total_input,
+.sheet-column_b_temporaryhitpoints_input,
+.sheet-hitpointmaximum_input,
+.sheet-acinitspeed_armorclass_input,
+.sheet-acinitspeed_initiative_input,
+.sheet-acinitspeed_speed_input,
+.sheet-passiveother_otherproficiencies_area,
+.sheet-passiveother_passivewisdom_input,
+.sheet-saveskill_skill_input,
+.sheet-saveskill_save_input,
+.sheet-saveskill_proficiency_input,
+.sheet-saveskill_inspiration_input,
+.sheet-abilities_score,
 .sheet-ribbon_input {
 	background: rgba(0, 255, 0, 0.3);
 }
 
 
 /* green */
-.sheet-hitPointMaximumLabel,
-.sheet-temporaryHitPointsLabel,
-.sheet-currentHitPointsLabel,
-.sheet-otherProficienciesLabel,
-.sheet-passiveWisdomLabel,
-.sheet-skillBoxLabel,
-.sheet-skillLabel,
-.sheet-saveThrowLabel,
-.sheet-saveLabel,
-.sheet-proficiencyLabel,
-.sheet-inspirationLabel,
-.sheet-statLabel,
-.sheet-strengthLabel,
+.sheet-coins_label,
+.sheet-coinequipment_label,
+.sheet-column_b_attacksxpellcasting_label,
+.sheet-deathSaves_label,
+.sheet-hitdicedeathsaves_hitdice_label,
+.sheet-hitdicedeathsaves_hitdice_total_label,
+.sheet-hitpointmaximum_label,
+.sheet-column_b_temporaryhitpoints_label,
+.sheet-column_b_currenthitpoints_label,
+.sheet-acinitspeed_initiative_label,
+.sheet-acinitspeed_speed_label,
+.sheet-acinitspeed_armorclass_label,
+.sheet-passiveother_otherproficiencies_label,
+.sheet-passiveother_passivewisdom_label,
+.sheet-saveskill_skills_label,
+.sheet-saveskill_skill_label,
+.sheet-saveskill_savingthrow_label,
+.sheet-saveskill_save_label,
+.sheet-saveskill_proficiency_label,
+.sheet-saveskill_inspiration_label,
+.sheet-abilities_label,
+.sheet-abilities_str_label,
 .sheet-ribbon_label {
 	background: rgba(255, 0, 0, 0.3);
 }
 
 
 /* red */
-.sheet-currentHitPoints,
-.sheet-skillProficiency,
-.sheet-saveProficiency,
-.sheet-statMod,
+.sheet-coinequipment_equipmentbottom_input,
+.sheet-deathSaves_succss_label,
+.sheet-deathSaves_failures_label,
+.sheet-hitdicedeathsaves_hitdice_input,
+.sheet-column_b_currenthitpoints_input,
+.sheet-saveskill_skill_proficiency,
+.sheet-saveskill_save_proficiency,
+.sheet-abilities_modifier,
 .sheet-biobox_row_spells_a1,
 .sheet-biobox_row_spells_b1,
 .sheet-biobox_row_spells_c1,
@@ -549,7 +684,7 @@
 
 
 /* yellow */
-
+.sheet-coins_input,
 .sheet-biobox_row_spells_a2,
 .sheet-biobox_row_spells_b2,
 .sheet-biobox_row_spells_c2,
