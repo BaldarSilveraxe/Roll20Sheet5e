@@ -1,42 +1,41 @@
-
 @import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
 
 /* ===GLOBAL=== */
-.sheet-global_flex_one {
-	flex: 1;
-}
+.sheet-global_flex  { display: flex; }
+.sheet-global_flex_one { flex: 1; }
+
 
 /* ===PRIMARY=== */
 .sheet-wrap {
-	font-family: "Overpass", Arial;
-	font-size: 12px;
-	margin: 0px -10px 0px -10px;
-	min-width: 870px;
+ font-family: "Overpass", Arial;
+   font-size: 12px;
+      margin: 0px -10px 0px -10px;
+   min-width: 870px;
 }
 
 .sheet-pp1,
 .sheet-pp2,
 .sheet-pp3 {
-	display: grid;
-	grid-template-columns: 299px 280px 291px;
-	grid-template-rows: 156px 977px;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-	width: 870px;
-	height: 1133px;
-	background-color: white;
+               display: grid;
+ grid-template-columns: 299px 280px 291px;
+    grid-template-rows: 156px 977px;
+       grid-column-gap: 0px;
+          grid-row-gap: 0px;
+                 width: 870px;
+                height: 1133px;
+      background-color: white;
 }
 
 .sheet-pp1 {
-	background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/mainPage.svg");
-	background-position: center center;
-	background-size: contain;
+          background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/mainPage.svg");
+ background-position: center center;
+     background-size: contain;
 }
 
 .sheet-pp2 {
-	background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/secondPage.svg");
-	background-position: center center;
-	background-size: contain;
+          background: url("https://raw.githubusercontent.com/BaldarSilveraxe/Roll20Sheet5e/master/svg/background/secondPage.svg");
+ background-position: center center;
+     background-size: contain;
 }
 
 .sheet-pp3 {
@@ -71,6 +70,10 @@
 	grid-area: 1 / 1 / 2 / 3;
 }
 
+.sheet-header_bottom {
+	grid-area: 3 / 1 / 4 / 3;
+}
+
 .sheet-header_ribbon {
 	grid-area: 2 / 1 / 3 / 2;
 }
@@ -93,7 +96,6 @@
 }
 
 .sheet-biobox_row {
-	display: flex;
 	width: 450px;
 	height: 20px;
 	margin: 0px 0px 0px 6px;
@@ -104,15 +106,14 @@
 	border-top: 2px solid gray;
 }
 
+/* ===HEADER Page THREE=== */
 .sheet-biobox_row_spells_upper {
-	display: flex;
 	width: 390px;
 	height: 46px;
 	margin: 7px 0px 0px 36px;
 }
 
 .sheet-biobox_row_spells_lower {
-	display: flex;
 	width: 390px;
 	height: 27px;
 	margin: 2px 0px 0px 36px;
@@ -141,41 +142,6 @@
 .sheet-biobox_row_spells_c2 { 
     margin: 0px 0px 0px 68px;
 }
-
-
-
-
-.sheet-header_bottom {
-	grid-area: 3 / 1 / 4 / 3;
-}
-
-
-/* ----------------------------------------------------------------------------- header players pages */
-
-
-/* ----------------------------------------------------------------------------- body columns players pages */
-
-/* These get replaced below. pp1ColumnA is done. */
-.sheet-columnA {
-	grid-area: 2 / 1 / 3 / 2;
-}
-
-/* These get replaced below. */
-.sheet-columnB {
-	grid-area: 2 / 2 / 3 / 3;
-}
-
-/* These get replaced below. */
-.sheet-columnC {
-	grid-area: 2 / 3 / 3 / 4;
-}
-
-/* These get replaced below. */
-.sheet-columnBC {
-	grid-area: 2 / 2 / 3 / 4;
-}
-
-/* ----------------------------------------------------------------------------- body columns players pages */
 
 /* ===BODY Page One Column A=== */
 .sheet-pp1_column_a {
@@ -220,7 +186,6 @@
 }
 
 .sheet-saveskill_inspiration {
-	display: flex;
 	width: 163px;
 	height: 23px;
 	margin: 16px 0px 0px 7px;
@@ -238,7 +203,6 @@
 }
 
 .sheet-saveskill_proficiency {
-	display: flex;
 	width: 163px;
 	height: 31px;
 	margin: 29px 0px 0px 7px;
@@ -256,7 +220,6 @@
 }
 
 .sheet-saveskill_save {
-	display: flex;
 	width: 149px;
 	height: 20px;
 	margin: 0px 0px 0px 13px;
@@ -291,7 +254,6 @@
 }
 
 .sheet-saveskill_skills {
-	display: flex;
 	width: 149px;
 	height: 20px;
 	margin: 0px 0px 0px 13px;
@@ -330,7 +292,6 @@
 }
 
 .sheet-passiveother_passivewisdom {
-	display: flex;
 	width: 260px;
 	height: 29px;
 	margin: 10px 0px 0px 31px;
@@ -365,7 +326,6 @@
 }
 
 .sheet-column_b_acinitspeed  {
-	display: flex;
 	width: 233px;
 	height: 69px;
 	margin: 23px 0px 0px 25px;
@@ -442,6 +402,7 @@
 	height: 50px;
 	margin: 8px 0px 0px 23px;
 }
+
 .sheet-column_b_temporaryhitpoints_label {
 	width: 237px;
 	height: 20px;
@@ -449,7 +410,6 @@
 }
 
 .sheet-column_b_hitdicedeathsaves {
-	display: flex;
 	width: 233px;
 	height: 69px;
 	margin: 15px 0px 0px 25px;
@@ -461,18 +421,20 @@
 }
 
 .sheet-hitdicedeathsaves_hitdice_total {
-    display: flex;
     width: 106px;
 	height: 20px;
 }
+
 .sheet-hitdicedeathsaves_hitdice_total_label {
     width: 50px;
     height: 20px;
 }
+
 .sheet-hitdicedeathsaves_hitdice_total_input {
     width: 56px;
 	height: 20px;
 }
+
 .sheet-hitdicedeathsaves_hitdice_input {
     width: 106px;
 	height: 29px;
@@ -489,13 +451,11 @@
 }
 
 .sheet-deathSaves_succss {
-    display: flex;
     width: 106px;
     height: 20px; margin: 2px 0px 0px 0px;
 }
 
 .sheet-deathSaves_failures {
-    display: flex;
     width: 106px;
     height: 20px; margin: 2px 0px 0px 0px;
 }
@@ -517,7 +477,6 @@
     height: 20px; margin: 2px 0px 0px 0px;
 }
 
-
 .sheet-column_b_attacksxpellcasting{
 	width: 259px;
 	height: 271px;
@@ -536,7 +495,6 @@
 }
 
 .sheet-coinequipment_coinequipment_wrap {
-    display: flex;
     width: 266px;
 	height: 197px;
 }
@@ -547,7 +505,6 @@
 }
 
 .sheet-coins_row {
-    display: flex;
     width: 79px;
 	height: 31px; 
 	margin: 7px 0px 0px 0px; 
@@ -588,11 +545,9 @@
 	margin: 0px 0px 0px 9px;
 }
 
-
-/* ===BODY Page One Column B=== */
+/* ===BODY Page One Column C=== */
 .sheet-pp1_column_c {
 	grid-area: 2 / 3 / 3 / 4;
-	background: rgba(100, 50, 255, 0.1);
 }
 
 .sheet-column_b_personality_input {
@@ -600,57 +555,351 @@
 	height: 72px;
 	margin: 23px 0px 0px 23px;
 }
+
 .sheet-column_b_personality_label {
 	width: 237px;
 	height: 20px;
 	margin: 0px 0px 0px 23px;
 }
+
 .sheet-column_b_ideals_input {
 	width: 237px;
 	height: 51px;
 	margin: 11px 0px 0px 23px;
 }
+
 .sheet-column_b_ideals_label {
 	width: 237px;
 	height: 20px;
 	margin: 0px 0px 0px 23px;
 }
+
 .sheet-column_b_bonds_input {
 	width: 237px;
 	height: 51px;
 	margin: 11px 0px 0px 23px;
 }
+
 .sheet-column_b_bonds_label {
 	width: 237px;
 	height: 20px;
 	margin: 0px 0px 0px 23px;
 }
+
 .sheet-column_b_flaws_input {
 	width: 237px;
 	height: 51px;
 	margin: 10px 0px 0px 23px;
 }
+
 .sheet-column_b_flaws_label {
 	width: 237px;
 	height: 20px;
 	margin: 0px 0px 0px 23px;
 }
+
 .sheet-column_b_features_input {
 	width: 259px;
 	height: 550px;
 	margin: 26px 0px 0px 12px;
 }
+
 .sheet-column_b_features_label {
 	width: 259px;
 	height: 20px;
 	margin: 0px 0px 0px 12px;
 }
 
+/* ===BODY Page Two Column A=== */
+.sheet-pp2_column_a {
+	grid-area: 2 / 1 / 3 / 2;
+}
 
+.sheet-column_a_appearance_input {
+	width: 254px;
+	height: 330px;
+	margin: 2px 0px 0px 32px;
+}
 
+.sheet-column_a_appearance_label {
+	width: 254px;
+	height: 20px;
+	margin: 0px 0px 0px 32px;
+}
 
+.sheet-column_a_backstory_input {
+	width: 254px;
+	height: 549px;
+	margin: 29px 0px 0px 32px;
+}
 
+.sheet-column_a_backstory_label {
+	width: 254px;
+	height: 20px;
+	margin: 0px 0px 0px 32px;
+}
 
+/* ===BODY Page Two Column BC=== */
+.sheet-pp2_column_bc {
+	grid-area: 2 / 2 / 3 / 4;
+}
+
+.sheet-column_bc_allies_input {
+	width: 535px;
+	height: 331px;
+	margin: 2px 0px 0px 13px;
+}
+
+.sheet-allies_left_input {
+	width: 267px;
+	height: 331px;
+}
+
+.sheet-allies_rght {
+	width: 268px;
+	height: 331px;
+	
+}
+
+.sheet-allies_rght_name_label {
+	width: 220px;
+	height: 15px;
+	margin: 26px 0px 0px 26px;
+}
+
+.sheet-allies_rght_name_input {
+	width: 220px;
+	height: 23px;
+	margin: 0px 0px 0px 26px;
+}
+
+.sheet-allies_rght_symbol_input {
+	width: 220px;
+	height: 178px;
+	margin: 0px 0px 0px 26px;
+}
+
+.sheet-allies_rght_symbol_label {
+	width: 220px;
+	height: 16px;
+	margin: 8px 0px 0px 26px;
+}
+
+.sheet-allies_right_input {
+	width: 268px;
+	height: 65px;
+}
+
+.sheet-column_bc_allies_label {
+	width: 535px;
+	height: 20px;
+	margin: 0px 0px 0px 13px;
+}
+
+.sheet-column_bc_addfeatures {
+	width: 535px;
+	height: 305px;
+	margin: 13px 0px 0px 13px;
+}
+
+.sheet-addfeatures_left_input {
+	width: 267px;
+	height: 305px;
+}
+
+.sheet-addfeatures_rght_input {
+	width: 268px;
+	height: 305px;
+}
+
+.sheet-column_bc_addfeatures_label {
+	width: 535px;
+	height: 20px;
+	margin: 0px 0px 0px 13px;
+}
+
+.sheet-column_bc_treasure {
+	width: 535px;
+	height: 226px;
+	margin: 13px 0px 0px 13px;
+}
+
+.sheet-treasure_left_input {
+	width: 267px;
+	height: 226px;
+}
+
+.sheet-treasure_rght_input {
+	width: 268px;
+	height: 226px;
+}
+
+.sheet-column_bc_treasure_label {
+	width: 535px;
+	height: 20px;
+	margin: 0px 0px 0px 13px;
+}
+
+/* ===BODY Page Three Column a=== */
+.sheet-pp3_column_a {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.sheet-column_a_levelzero {
+	width: 254px;
+	height: 28px;
+	margin: 33px 0px 0px 35px;
+}
+
+.sheet-number_label {
+    width: 24px;
+	height: 28px; 
+}
+
+.sheet-levelzero_cantrip_label {
+    width: 215px;
+	height: 28px; 
+	margin: 0px 0px 0px 11px; 
+}
+
+.sheet-slot_input {
+    width: 71px;
+	height: 28px; 
+	margin: 0px 0px 0px 2px;
+}
+
+.sheet-slotspent_input {
+    width: 156px;
+	height: 28px; 
+	margin: 0px 0px 0px 2px; 
+}
+
+.sheet-column_a_levelzero_input {
+	width: 254px;
+	height: 178px;
+	margin: 7px 0px 0px 35px; 
+}
+
+.sheet-column_a_spellkey {
+	width: 258px;
+	height: 30px; 
+	margin: 0px 0px 0px 32px;
+}
+.sheet-column_a_levelone {
+	width: 254px;
+	height: 28px;
+	margin: 6px 0px 0px 35px;
+}
+
+.sheet-column_a_levelone_input {
+	width: 254px;
+	height: 285px;
+	margin: 6px 0px 0px 35px;  
+}
+
+.sheet-column_a_leveltwo {
+	width: 254px;
+	height: 28px;
+	margin: 19px 0px 0px 35px;
+}
+
+.sheet-column_a_leveltwo_input {
+	width: 254px;
+	height: 290px;
+	margin: 6px 0px 0px 35px;   
+}
+
+.sheet-pp3_column_b {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.sheet-column_b_levelthree {
+	width: 254px;
+	height: 28px;
+	margin: 33px 0px 0px 15px;
+}
+
+.sheet-column_b_levelthree_input {
+	width: 254px;
+	height: 282px;
+	margin: 6px 0px 0px 15px; 
+}
+
+.sheet-column_b_levelfour {
+	width: 254px;
+	height: 28px;
+	margin: 18px 0px 0px 15px;
+}
+
+.sheet-column_b_levelfour_input {
+	width: 254px;
+	height: 282px;
+	margin: 6px 0px 0px 15px; 
+}
+
+.sheet-column_b_levelfive {
+	width: 254px;
+	height: 28px;
+	margin: 18px 0px 0px 15px;
+}
+
+.sheet-column_b_levelfive_input {
+	width: 254px;
+	height: 208px;
+	margin: 6px 0px 0px 13px;
+}
+
+.sheet-pp3_column_c {
+	grid-area: 2 / 3 / 3 / 4;
+}
+
+.sheet-column_c_levelsix {
+	width: 254px;
+	height: 28px;
+	margin: 33px 0px 0px 12px;
+}
+
+.sheet-column_c_levelsix_input {
+	width: 254px;
+	height: 197px;
+	margin: 6px 0px 0px 12px; 
+}
+
+.sheet-column_c_levelseven {
+	width: 254px;
+	height: 28px;
+	margin: 20px 0px 0px 12px;
+}
+
+.sheet-column_c_levelseven_input {
+	width: 254px;
+	height: 198px;
+	margin: 6px 0px 0px 12px; 
+}
+
+.sheet-column_c_leveleight {
+	width: 254px;
+	height: 28px;
+	margin: 20px 0px 0px 12px;
+}
+
+.sheet-column_c_leveleight_input {
+	width: 254px;
+	height: 156px;
+	margin: 6px 0px 0px 12px; 
+}
+
+.sheet-column_c_levelnine {
+	width: 254px;
+	height: 28px;
+	margin: 18px 0px 0px 12px;
+}
+
+.sheet-column_c_levelnine_input {
+	width: 254px;
+	height: 165px;
+	margin: 6px 0px 0px 13px; 
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TEMP stuff below */
 
@@ -662,10 +911,23 @@
 .sheet-header_top,
 .sheet-header_bottom {
 	background: rgba(255, 0, 255, 0.3);
-}
+} /* Magenta */
 
-
-/* Magenta */
+.sheet-column_a_levelzero_input,
+.sheet-column_a_levelone_input,
+.sheet-column_a_leveltwo_input,
+.sheet-column_b_levelthree_input,
+.sheet-column_b_levelfour_input,
+.sheet-column_b_levelfive_input,
+.sheet-column_c_levelsix_input,
+.sheet-column_c_levelseven_input,
+.sheet-column_c_leveleight_input,
+.sheet-column_c_levelnine_input,
+.sheet-treasure_left_input,
+.sheet-addfeatures_left_input,
+.sheet-allies_left_input,
+.sheet-column_a_appearance_input,
+.sheet-column_a_backstory_input,
 .sheet-column_b_personality_input,
 .sheet-column_b_ideals_input,
 .sheet-column_b_bonds_input,
@@ -689,11 +951,17 @@
 .sheet-abilities_score,
 .sheet-ribbon_input {
 	background: rgba(0, 255, 0, 0.3);
-}
+} /* green */
 
-
-
-/* green */
+.sheet-number_label,
+.sheet-levelzero_cantrip_label,
+.sheet-allies_rght_name_label,
+.sheet-allies_rght_symbol_label,
+.sheet-column_bc_treasure_label,
+.sheet-column_bc_addfeatures_label,
+.sheet-column_bc_allies_label,
+.sheet-column_a_appearance_label,
+.sheet-column_a_backstory_label,
 .sheet-column_b_personality_label,
 .sheet-column_b_ideals_label,
 .sheet-column_b_bonds_label,
@@ -723,10 +991,14 @@
 .sheet-abilities_str_label,
 .sheet-ribbon_label {
 	background: rgba(255, 0, 0, 0.3);
-}
+} /* red */
 
-
-/* red */
+.sheet-column_a_spellkey,
+.sheet-slotspent_input,
+.sheet-allies_right_input,
+.sheet-allies_rght_name_input,
+.sheet-addfeatures_rght_input,
+.sheet-treasure_rght_input,
 .sheet-coinequipment_equipmentbottom_input,
 .sheet-deathSaves_succss_label,
 .sheet-deathSaves_failures_label,
@@ -740,23 +1012,14 @@
 .sheet-biobox_row_spells_c1,
 .sheet-global_flex_one {
 	background: rgba(255, 255, 0, 0.3);
-}
+} /* yellow */
 
-
-/* yellow */
+.sheet-slot_input,
+.sheet-allies_rght_symbol_input,
 .sheet-coins_input,
 .sheet-biobox_row_spells_a2,
 .sheet-biobox_row_spells_b2,
 .sheet-biobox_row_spells_c2,
 .sheet-biobox_label {
 	background: rgba(0, 255, 255, 0.3);
-}
-
-
-/* red */
-
-
-/*
-.sheet-ribbonLabel
-.sheet-ribbon 
-.sheet-headerUpperBand { background: rgba(255, 0, 255, 0.3); } */
+}/* blue */
